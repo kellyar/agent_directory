@@ -7,7 +7,7 @@ Read the following files in order:
 2. `decisions.md` — full decision log
 3. `discovery/checkpoint-1.md` (if exists) — CP1 status and key outputs
 4. `design/checkpoint-2.md` (if exists) — CP2 status and key outputs
-5. `build/checkpoint-3.md` (if exists) — most recent CP3 status
+5. Most recent `build/checkpoint-3-M*.md` file (if any exist) — most recent CP3 status (files named `checkpoint-3-M1.md`, `checkpoint-3-M2.md`, etc.)
 6. `build/implementation-plan.md` (if exists) — current milestone and task progress
 
 Then produce a concise session briefing in this structure:

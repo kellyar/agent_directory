@@ -7,7 +7,7 @@ Ask which checkpoint to review (1, 2, or 3) if not clear from context.
 Read the relevant checkpoint document:
 - CP1: `discovery/checkpoint-1.md`
 - CP2: `design/checkpoint-2.md`
-- CP3: `build/checkpoint-3.md`
+- CP3: `build/checkpoint-3-M[N].md` (where N is the milestone number — ask the user if unclear)
 
 Present the checkpoint to the user as a distilled summary — not raw output. Structure it as:
 1. **What the team produced and recommends** (2–3 sentences)

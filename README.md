@@ -139,6 +139,8 @@ In either mode, agents **always escalate** genuine blockers — a fork in the ro
 | `/architecture` | Run the Design & Architecture Team (requires CP1 approval) |
 | `/build` | Run the Build Team (requires CP2 approval) |
 | `/checkpoint` | Review and action a checkpoint |
+| `/sprint` | Plan and run a single sprint, or resume a sprint in progress |
+| `/refine` | Run backlog refinement for the next sprint (PM + UX Designer) |
 | `/scope-change` | Handle a proposed scope change — assesses tier and manages re-work path |
 | `/release` | Run the release checklist and deploy to production |
 | `/retrospective` | Review the project and apply learnings back to the agency framework |
@@ -230,12 +232,15 @@ After `/build` (grows sprint by sprint):
       [feature].md
     qa-reports/
       [sprint-or-task].md
+    checkpoint-3-M1.md        ← one per milestone (M1, M2, ...) if CP3 enabled
+    checkpoint-3-M2.md
     release-[version].md      ← after /release
   design/
     stories/
       US-001-[slug].md        ← elaborated during backlog refinement, one sprint ahead
     sprint-flows/
-      sprint-[N].md           ← detailed screen specs per sprint
+      sprint-1.1.md           ← detailed screen specs per sprint (just-in-time)
+  changes/                    ← scope change requests (created by /scope-change)
   src/
     ...
 ```
@@ -342,5 +347,6 @@ Cross-cutting methodologies used by multiple agents.
 | `templates/docs/infrastructure-plan.md` | DevOps Engineer | Build start |
 | `templates/docs/analytics-plan.md` | Analytics Engineer | Build start |
 | `templates/docs/test-strategy.md` | QA Engineer | Before first commit |
-| `templates/docs/test-cases.md` | QA Engineer | Per sprint |
+| `templates/docs/test-cases.md` | QA Engineer | Per sprint — before Developer starts each story |
 | `templates/docs/qa-report.md` | QA Engineer | Per task / milestone |
+| `templates/docs/sprint-flow.md` | UX Designer | Backlog refinement — one sprint ahead |

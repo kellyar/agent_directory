@@ -1,5 +1,7 @@
 # Checkpoint 3: Milestone Review
 
+*File naming: `build/checkpoint-3-M[N].md` where N is the milestone number (e.g. `checkpoint-3-M1.md`, `checkpoint-3-M2.md`). One file per milestone.*
+
 **Project:** [Project Name]
 **Milestone:** [Milestone Name / Number]
 **Date:** [YYYY-MM-DD]

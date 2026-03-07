@@ -25,7 +25,8 @@ When acting as any agent, load the relevant definition from `.agency/agents/` be
 | `decisions.md` | Append-only log of every significant decision made, by whom, and why. |
 | `discovery/` | Discovery Team outputs (personas, market analysis, assumption map, CP1) |
 | `design/` | Design & Architecture Team outputs (PRD, architecture, backlog, UX flows, CP2) |
-| `build/` | Build Team outputs (implementation plan, code standards, QA reports, CP3) |
+| `build/` | Build Team outputs (implementation plan, code standards, QA reports, CP3 per milestone) |
+| `changes/` | Scope change requests. Created when `/scope-change` is run. |
 | `src/` | Application code |
 
 ## Current Phase

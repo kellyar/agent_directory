@@ -17,6 +17,8 @@ Do not store project briefs, decisions, or artifacts here. Those belong in the p
 | `/discovery` | Run the Discovery Team |
 | `/architecture` | Run the Design & Architecture Team (requires CP1 approval) |
 | `/build` | Run the Build Team (requires CP2 approval) |
+| `/sprint` | Plan and run a single sprint, or resume a sprint in progress |
+| `/refine` | Run backlog refinement for the next sprint |
 | `/checkpoint` | Review and action a checkpoint |
 | `/scope-change` | Handle a proposed scope change mid-project |
 | `/release` | Run the release checklist and deploy to production |

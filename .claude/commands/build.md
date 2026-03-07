@@ -26,9 +26,9 @@ Apply throughout: `.agency/principles/agile.md` and `.agency/principles/spec-dri
 - Set up CI/CD pipeline and environments — this must be complete before Developers commit code
 
 **As QA Engineer:**
-- Review `design/prd.md` and all stories in `design/stories/`
-- Produce the Test Strategy using `.agency/templates/docs/test-strategy.md` and initial Test Cases using `.agency/templates/docs/test-cases.md`
-- Apply `.agency/skills/security-review.md` to any feature with a security surface
+- Review `design/prd.md`, `design/epics/`, and `design/architecture.md`
+- Produce the Test Strategy using `.agency/templates/docs/test-strategy.md`. This is the only QA artifact produced at build setup. Test cases are written per sprint — before each story's Developer starts, confirmed failing before implementation begins. See the sprint execution section below.
+- Apply `.agency/skills/security-review.md` to any epic with a security surface to inform the test strategy risk priorities
 
 **As Analytics Engineer:**
 - Review success metrics in `design/prd.md` and UX flows in `design/ux-flows.md`
@@ -60,7 +60,7 @@ This runs during the current sprint — not at the start of the next one. Refine
 
 **As Developer:** Implement the assigned task against the spec. Surface any spec gap or ambiguity immediately — do not assume. Produce task notes for anything unexpected.
 
-**As QA Engineer:** Validate the completed task against its acceptance criteria. Apply `.agency/skills/security-review.md` if the task has a security surface. Produce a QA Report using `.agency/templates/docs/qa-report.md`. Issue sign-off or blocking issues.
+**As QA Engineer:** Before the Developer starts — write test cases for this story using `.agency/templates/docs/test-cases.md`. Confirm they fail (nothing is built yet). This is the proof that tests validate the spec, not the implementation. Apply `.agency/skills/security-review.md` if the story has a security surface. Then, after the Developer completes implementation, validate against acceptance criteria, produce a QA Report using `.agency/templates/docs/qa-report.md`, and issue sign-off or list blocking issues.
 
 **As Engineering Lead:** Review and integrate. If QA issues are blocking, assign back for fixes before integrating. Assign next task. Repeat until sprint stories are complete.
 
@@ -78,7 +78,7 @@ This runs during the current sprint — not at the start of the next one. Refine
 
 When all sprints in a milestone are complete:
 
-If CP3 is **Enabled:** Compile `build/checkpoint-3.md` using `.agency/templates/checkpoint-3.md`. Present to the user and wait for approval before starting the next milestone.
+If CP3 is **Enabled:** Compile `build/checkpoint-3-M[N].md` (where N is the milestone number, e.g. `checkpoint-3-M1.md`) using `.agency/templates/checkpoint-3.md`. Present to the user and wait for approval before starting the next milestone.
 
 If CP3 is **Disabled:** Log milestone completion in `decisions.md` and begin planning the next milestone.
 
@@ -100,3 +100,5 @@ Update **Current Phase** in `CLAUDE.md` to `Build`.
 When the final milestone is complete, prompt the user to run `/release`.
 
 Escalate to the user whenever a blocker or out-of-spec decision arises that cannot be resolved within the approved plan.
+
+To re-enter the build phase mid-sprint in a new session without re-running setup, use `/sprint` to resume from where work left off.

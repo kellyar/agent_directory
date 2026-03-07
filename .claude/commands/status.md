@@ -7,7 +7,7 @@ Read the following files from the project root:
 - `decisions.md` — for recent decisions
 - `discovery/checkpoint-1.md` (if it exists) — for CP1 status
 - `design/checkpoint-2.md` (if it exists) — for CP2 status
-- `build/checkpoint-3.md` (if it exists) — for CP3 status
+- `build/checkpoint-3-M*.md` files (most recent, if any exist) — for CP3 status. These are named `checkpoint-3-M1.md`, `checkpoint-3-M2.md`, etc. — one per milestone.
 - `build/implementation-plan.md` (if it exists) — for current milestone progress
 
 Display:
