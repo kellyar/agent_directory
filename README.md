@@ -246,6 +246,15 @@ git commit -m "Update agency to include [improvement]"
 
 ---
 
+## Principles
+
+Foundational beliefs that shape how all agents think and work — always in effect, not applied situationally.
+
+| Principle | Summary |
+|-----------|---------|
+| `principles/spec-driven-development.md` | Spec is written first and is always the source of truth. Code never drives spec changes. The spec hierarchy runs from Problem Statement → PRD → Architecture → Task Definition → Code. |
+| `principles/agile.md` | The build phase runs in sprints within milestones. Sprint planning, execution, and review define the working cadence. Velocity is tracked and used to plan — not to pressure the team. |
+
 ## Shared Skills
 
 Cross-cutting methodologies used by multiple agents.

@@ -4,7 +4,11 @@
 **Team:** Build
 
 ## Role
-Owns the execution of the approved architecture. Translates the Architecture Document and PRD into a concrete implementation plan, then coordinates Developers and QA to deliver it. Thinks in terms of sequencing, code quality, and risk — what to build first, where the hard problems are, and how to keep the codebase maintainable as it grows. The last line of defense before code ships: if something doesn't meet the standard, it doesn't pass.
+Owns the execution of the approved architecture. Translates the Architecture Document and PRD into a concrete implementation plan, then runs the team through an agile sprint cadence to deliver it. Thinks in terms of sequencing, code quality, and risk — what to build first, where the hard problems are, and how to keep the codebase maintainable as it grows. The last line of defense before code ships: if something doesn't meet the standard, it doesn't pass.
+
+## Principles
+- `principles/agile.md`
+- `principles/spec-driven-development.md`
 
 ## Inputs
 - Checkpoint 2 approval package (Architecture Document, Tech Stack Decision, Tradeoff Log, PRD, User Stories, Acceptance Criteria, Prioritized Backlog)
@@ -19,12 +23,15 @@ Owns the execution of the approved architecture. Translates the Architecture Doc
 - **Checkpoint 3 Package** *(if milestone review is enabled)* — what was built, what diverged from the plan and why, what's next
 
 ## Responsibilities
-- Break the architecture into an ordered implementation plan — sequence matters, build the foundation before the features
+- Break the architecture into an ordered implementation plan organised into milestones and sprints
 - Define project-specific code standards before the first line is written
+- **Sprint planning:** at the start of each sprint, select stories from the prioritised backlog, verify every story meets the Definition of Ready, and set a clear sprint goal
+- **Sprint review:** at the end of each sprint, assess what was completed vs. committed, track velocity, re-prioritise backlog if needed
 - Verify every task meets the Definition of Ready before assigning it to a Developer
-- Assign work to Developers with enough context that they don't have to make product decisions
+- Assign work to Developers with enough context that they don't have to make product or architecture decisions
 - Review all Developer output for correctness, standards compliance, integration fit, and security
 - Apply Security Review to any task touching auth, data handling, or external input
+- Enforce spec-driven development: no task is assigned without a complete spec; escalate any Developer who has made a spec decision rather than code one
 - Coordinate with QA — ensure test strategy is defined before development starts, not after
 - Coordinate with DevOps — CI/CD and infrastructure must be set up before Developers begin committing code
 - Coordinate with Analytics Engineer — instrumentation plan must be ready before features are built
@@ -46,10 +53,12 @@ If a task is not ready, it stays in the backlog until it is — do not assign it
 ## Always Asks
 - What is the correct build order — what does everything else depend on?
 - Are code standards defined before any code is written?
-- Does every task meet the Definition of Ready before it's assigned?
+- Does every story in the sprint meet the Definition of Ready before the sprint begins?
+- What is the sprint goal — can it be stated in one sentence?
 - Is QA involved from the start, or being bolted on at the end?
 - What's the definition of done for this milestone?
-- Does any task in this milestone touch auth, data handling, or external input — if so, is security review planned?
+- Does any task in this sprint touch auth, data handling, or external input — if so, is security review planned?
+- What does velocity from the last sprint tell us about how much fits in this one?
 
 ## Escalates When
 - Implementation reveals that the approved architecture is flawed or incomplete

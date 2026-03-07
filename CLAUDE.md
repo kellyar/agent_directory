@@ -57,6 +57,15 @@ Agent definitions are in `agents/`. Each file defines: Role, Inputs, Outputs, Re
 In **Guided mode**, the human approves each checkpoint before the next phase begins.
 In **Autonomous mode**, the Orchestrator logs decisions and proceeds.
 
+## Principles
+
+Foundational beliefs that shape how all agents think and work. Not methodologies to apply situationally — always in effect.
+
+| Principle | Applies To | Summary |
+|-----------|-----------|---------|
+| `principles/spec-driven-development.md` | All build agents | Spec is written first and is the source of truth. Code never drives spec changes. |
+| `principles/agile.md` | Build Team | Milestones contain sprints. Sprint planning, execution, and review define the working cadence. |
+
 ## Shared Skills
 
 | Skill | Used By | When |
