@@ -12,10 +12,13 @@ Create `build/release-[version-or-milestone].md` using `.agency/templates/releas
 - Pull analytics validation status from `build/analytics-plan.md`
 - Check documentation completeness
 
-Step 2 — Identify gaps:
+Step 2 — Check GitHub state:
+Verify that all feature branches for this release have been merged to `main`. Any open PR targeting `main` that is not explicitly deferred is a blocker. List them clearly.
+
+Step 3 — Identify gaps:
 Any unchecked item that is not explicitly accepted as a known gap is a blocker. List all blockers clearly.
 
-Step 3 — Present to user:
+Step 4 — Present to user:
 In both Guided and Autonomous mode, present the release checklist summary to the user before proceeding:
 - Items checked: [count]
 - Blockers: [list, or "None"]
@@ -24,14 +27,14 @@ In both Guided and Autonomous mode, present the release checklist summary to the
 
 Always require explicit human approval before deploying to production — regardless of mode. Production deployment is never autonomous.
 
-Step 4 — On approval:
+Step 5 — On approval:
 - Mark the release checklist as Approved to Ship
 - Log the release decision in `decisions.md`
 - Execute the deployment runbook from `build/infrastructure-plan.md`
 - Confirm deployment health via the monitoring and uptime checks defined in the infrastructure plan
 - Update `CLAUDE.md` Current Phase to `Complete` if this is the final release
 
-Step 5 — Post-deploy:
+Step 6 — Post-deploy:
 Monitor for [30 minutes or per the infrastructure plan] and confirm:
 - No spike in error rates
 - Response times within NFR targets

@@ -98,10 +98,15 @@ Patterns in use on this project and when to apply them.
 
 ## Git Workflow
 
-- **Branch naming:** [convention — e.g., `feature/[US-XXX]-short-description`]
-- **Commit message format:** [e.g., `[US-XXX] Short description in imperative mood`]
-- **PR requirements:** [e.g., all tests passing, one reviewer, QA sign-off for feature branches]
-- **Who reviews:** [Engineering Lead reviews all PRs]
+*This project follows the branching and PR process defined in `.agency/skills/github-workflow.md`. Fill in project-specific settings below.*
+
+- **Branch naming:** `feature/US-[XXX]-[slug]` for stories · `fix/[slug]` for bugs · `infra/[slug]` for DevOps work
+- **Commit message format:** `[US-XXX] Short description in imperative mood`
+- **PR requirements:** CI passing · QA sign-off commented on PR · Engineering Lead approval · human merge
+- **Merge gate:** Human approval required before merging to `main` — always, regardless of project mode
+- **Additional CI checks:** [any project-specific checks — e.g., type checking, security scanning, coverage threshold]
+- **Branch lifecycle:** Delete branches after merge — yes / no
+- **Special rules:** [any project-specific additions]
 
 ---
 
@@ -112,6 +117,7 @@ A task is not complete until:
 - [ ] All acceptance criteria from the user story pass
 - [ ] Tests written and passing locally
 - [ ] No new linter warnings introduced
-- [ ] QA sign-off received on acceptance criteria
-- [ ] Engineering Lead code review complete
+- [ ] QA sign-off received on acceptance criteria and commented on the PR
+- [ ] Engineering Lead code review complete and PR approved
+- [ ] PR marked Ready for Review and awaiting human merge
 - [ ] [Any project-specific criteria]

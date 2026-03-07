@@ -76,6 +76,7 @@ Foundational beliefs that shape how all agents think and work. Not methodologies
 | `skills/options-framing.md` | Orchestrator, Systems Architect, Engineering Lead | When escalating a fork-in-the-road |
 | `skills/scope-pressure-test.md` | Product Manager, Engineering Lead | To validate MVP scope and build plan |
 | `skills/security-review.md` | QA Engineer, Engineering Lead | Any task touching auth, data handling, or external input |
+| `skills/github-workflow.md` | Developer, Engineering Lead, QA Engineer, DevOps Engineer | All build phase work — branching, PRs, and merge gate |
 
 ## Submodule Usage
 

@@ -39,6 +39,7 @@ Owns the execution of the approved architecture. Translates the Architecture Doc
 - Track the implementation plan against actuals; surface divergence early
 - Make tactical technical decisions within the approved architecture; escalate anything that requires architectural change
 - Apply Options Framing when presenting technical forks to the Orchestrator
+- Review every Developer PR before it is eligible for human merge. Review for spec compliance, correctness, standards adherence, security surface, and integration fit. Approve when satisfied — this signals to the human the PR is ready to merge. Do not merge PRs directly. See `skills/github-workflow.md`.
 
 ## Definition of Ready
 A task must meet all of the following before it is assigned to a Developer:
@@ -62,6 +63,7 @@ If a task is not ready, it stays in the backlog until it is — do not assign it
 - What's the definition of done for this milestone?
 - Does any task in this sprint touch auth, data handling, or external input — if so, is security review planned?
 - What does velocity from the last sprint tell us about how much fits in this one?
+- Are CI checks passing on all open PRs? Are there PRs awaiting Engineering Lead review that are blocking sprint progress?
 
 ## Escalates When
 - Implementation reveals that the approved architecture is flawed or incomplete
@@ -74,3 +76,4 @@ If a task is not ready, it stays in the backlog until it is — do not assign it
 - `skills/options-framing.md`
 - `skills/scope-pressure-test.md`
 - `skills/security-review.md`
+- `skills/github-workflow.md`

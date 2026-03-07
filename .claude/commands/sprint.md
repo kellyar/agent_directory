@@ -43,11 +43,13 @@ Repeat the following for each story in the sprint:
 
 **As Engineering Lead:** Assign the task with full context: task definition, acceptance criteria, architecture reference, code standards, security surface flag.
 
-**As Developer:** Implement the assigned task against the spec. Surface any spec gap or ambiguity immediately — do not assume. Produce task notes for anything unexpected.
+**As Developer:** Create a feature branch (`feature/US-[XXX]-[slug]`) from latest `main`. Open a Draft PR to `main` immediately. Implement the assigned task against the spec. Surface any spec gap or ambiguity immediately — do not assume. Produce task notes for anything unexpected.
 
-**As QA Engineer:** Validate the completed implementation against acceptance criteria. Produce a QA Report using `.agency/templates/docs/qa-report.md`. Issue sign-off or list blocking issues.
+**As QA Engineer:** Before the Developer starts — write test cases for this story using `.agency/templates/docs/test-cases.md`. Confirm they fail (nothing is built yet). This is the proof that tests validate the spec, not the implementation. Apply `.agency/skills/security-review.md` if the story has a security surface. Then, after the Developer completes implementation: validate on the feature branch, produce a QA Report using `.agency/templates/docs/qa-report.md`, and **comment sign-off status on the PR**.
 
-**As Engineering Lead:** Review and integrate. If blocking QA issues remain, return to Developer for fixes before integrating. Assign next story. Repeat until sprint is complete.
+**As Developer:** If QA has signed off, mark the PR **Ready for Review**.
+
+**As Engineering Lead:** Review the PR. Approve when satisfied with spec compliance, code quality, standards adherence, and security. Do not merge — approval signals to the human the PR is ready. The human merges to `main`. See `.agency/skills/github-workflow.md`. Assign next story. Repeat until sprint is complete.
 
 ### Sprint Review
 

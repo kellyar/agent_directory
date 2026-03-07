@@ -297,6 +297,7 @@ Cross-cutting methodologies used by multiple agents.
 | `skills/options-framing.md` | Orchestrator, Systems Architect, Engineering Lead | When escalating a fork-in-the-road decision |
 | `skills/scope-pressure-test.md` | Product Manager, Engineering Lead | To validate MVP scope and implementation plan |
 | `skills/security-review.md` | QA Engineer, Engineering Lead | Any task touching auth, data handling, or external input |
+| `skills/github-workflow.md` | Developer, Engineering Lead, QA Engineer, DevOps Engineer | All build phase work — branching, PRs, and merge gate |
 
 ---
 

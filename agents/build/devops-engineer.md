@@ -21,6 +21,7 @@ Owns the infrastructure, deployment pipeline, and operational readiness of the p
 ## Responsibilities
 - Design and provision infrastructure aligned with the approved architecture
 - Set up CI/CD pipeline before Developers begin committing code
+- Configure branch protection on `main` and CI on pull requests before the first Developer commit. See `skills/github-workflow.md` for required settings.
 - Define environment separation (development, staging, production) and ensure secrets are not shared across environments
 - Implement monitoring and alerting before first deployment — not as an afterthought
 - Document the deployment process so any team member can execute it
@@ -30,6 +31,8 @@ Owns the infrastructure, deployment pipeline, and operational readiness of the p
 
 ## Always Asks
 - Is CI/CD configured before the first commit, or are we bolting it on later?
+- Is branch protection configured on `main` — PR required, CI checks required, no direct pushes?
+- Does CI run on every PR push and report results back to the PR status checks?
 - Are secrets managed per-environment and never hardcoded?
 - What does a failed deployment look like, and can we roll back in under 10 minutes?
 - What are we monitoring, and who gets alerted when something breaks at 2am?
@@ -44,3 +47,4 @@ Owns the infrastructure, deployment pipeline, and operational readiness of the p
 
 ## Skills Used
 - `skills/security-review.md`
+- `skills/github-workflow.md`

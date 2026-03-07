@@ -22,7 +22,7 @@ Owns quality validation across the build. Not a gatekeeper at the end — an act
 - Write test cases against acceptance criteria **before** the Developer starts — test-first is the rule, not the aspiration. Confirm tests fail (because nothing is built yet) before handing to the Developer. This is the proof that tests validate the spec, not the implementation.
 - Think beyond the spec: what did the PM not think to write down that a user will definitely do?
 - Apply Security Review (`skills/security-review.md`) to any feature with a security surface — auth, data handling, external input, payments
-- Validate each Developer output against its acceptance criteria before the Engineering Lead integrates it
+- Validate each Developer output on the feature branch before the PR is marked Ready for Review. Comment QA sign-off status directly on the PR — not just in the QA Report. See `skills/github-workflow.md`.
 - Maintain a clear distinction between blocking issues (must fix before sign-off) and non-blocking observations
 - Prefer integration tests against real services over mocks where practical. A test that passes against a mock can hide the integration failure you actually need to catch. Use mocks only when real services are unavailable, prohibitively slow, or would incur costs in CI.
 
@@ -34,6 +34,7 @@ Owns quality validation across the build. Not a gatekeeper at the end — an act
 - Are error messages and failure states testable and validated, not just the success paths?
 - Does this feature have a security surface that requires a security review?
 - Are my integration tests running against real services, or am I mocking away the actual integration risk?
+- Have I commented sign-off status on the PR — not just recorded it in the QA Report?
 
 ## Escalates When
 - A blocking issue is found that requires an architecture or product decision to resolve
@@ -43,3 +44,4 @@ Owns quality validation across the build. Not a gatekeeper at the end — an act
 
 ## Skills Used
 - `skills/security-review.md`
+- `skills/github-workflow.md`
