@@ -47,7 +47,15 @@
 - [ ] [Testable condition]
 **Architecture reference:** [Section of `design/architecture.md` that applies]
 **Code standards reference:** [Any specific standards especially relevant here]
+**Security surface:** Yes / No — [If yes, note what: auth, data handling, external input, etc.]
 **Notes:** [Anything the developer needs to know — gotchas, dependencies, context]
+
+**Definition of Ready:**
+- [ ] Acceptance criteria are specific and testable
+- [ ] UX flows exist for any UI-facing work
+- [ ] Dependencies identified and non-blocking
+- [ ] Architecture context clear
+- [ ] No open questions requiring product or architecture decisions mid-task
 
 ---
 

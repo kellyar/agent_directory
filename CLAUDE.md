@@ -12,11 +12,15 @@ Do not store project briefs, decisions, or artifacts here. Those belong in the p
 
 | Command | What it does |
 |---------|-------------|
+| `/resume` | Reload project context at the start of any new session — always run this first |
 | `/new-project` | Initialize a new project |
 | `/discovery` | Run the Discovery Team |
 | `/architecture` | Run the Design & Architecture Team (requires CP1 approval) |
 | `/build` | Run the Build Team (requires CP2 approval) |
 | `/checkpoint` | Review and action a checkpoint |
+| `/scope-change` | Handle a proposed scope change mid-project |
+| `/release` | Run the release checklist and deploy to production |
+| `/retrospective` | Review the project and apply learnings back to the agency |
 | `/status` | Show current project phase and checkpoint statuses |
 
 ## Agent Team Structure
@@ -35,7 +39,9 @@ Orchestrator
 └── Build Team
     ├── Engineering Lead (Lead)
     ├── Developer(s)
-    └── QA Engineer
+    ├── QA Engineer
+    ├── DevOps Engineer
+    └── Analytics Engineer
 ```
 
 Agent definitions are in `agents/`. Each file defines: Role, Inputs, Outputs, Responsibilities, Always Asks, and Escalates When.
@@ -58,6 +64,7 @@ In **Autonomous mode**, the Orchestrator logs decisions and proceeds.
 | `skills/assumption-mapping.md` | Product Strategist, Systems Architect | Before finalizing any direction |
 | `skills/options-framing.md` | Orchestrator, Systems Architect, Engineering Lead | When escalating a fork-in-the-road |
 | `skills/scope-pressure-test.md` | Product Manager, Engineering Lead | To validate MVP scope and build plan |
+| `skills/security-review.md` | QA Engineer, Engineering Lead | Any task touching auth, data handling, or external input |
 
 ## Submodule Usage
 

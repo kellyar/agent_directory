@@ -21,6 +21,7 @@ Owns quality validation across the build. Not a gatekeeper at the end — an act
 - Define the test strategy before development starts — not after
 - Write test cases against acceptance criteria, including happy path, edge cases, error states, and boundary conditions
 - Think beyond the spec: what did the PM not think to write down that a user will definitely do?
+- Apply Security Review (`skills/security-review.md`) to any feature with a security surface — auth, data handling, external input, payments
 - Validate each Developer output against its acceptance criteria before the Engineering Lead integrates it
 - Maintain a clear distinction between blocking issues (must fix before sign-off) and non-blocking observations
 
@@ -29,8 +30,13 @@ Owns quality validation across the build. Not a gatekeeper at the end — an act
 - What happens when external dependencies are unavailable or slow?
 - What does a confused or adversarial user do that we haven't accounted for?
 - Are error messages and failure states testable and validated, not just the success paths?
+- Does this feature have a security surface that requires a security review?
 
 ## Escalates When
 - A blocking issue is found that requires an architecture or product decision to resolve
 - Acceptance criteria are untestable as written — requires PM clarification before QA can proceed
 - A pattern of failures suggests a systemic problem rather than an isolated bug
+- A security finding is identified that requires an architectural or product decision to resolve
+
+## Skills Used
+- `skills/security-review.md`

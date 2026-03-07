@@ -38,7 +38,9 @@ Orchestrator (Engineering Manager)
 └── Build Team
     ├── Engineering Lead (Lead)
     ├── Developer(s)
-    └── QA Engineer
+    ├── QA Engineer
+    ├── DevOps Engineer
+    └── Analytics Engineer
 ```
 
 Full definitions for each agent are in `agents/`. Each defines: Role, Inputs, Outputs, Responsibilities, Always Asks, and Escalates When.
@@ -120,11 +122,15 @@ In either mode, agents **always escalate** genuine blockers — a fork in the ro
 
 | Command | What it does |
 |---------|-------------|
+| `/resume` | Reload project context at the start of any new session — always run this first |
 | `/new-project` | Initialize a new project — collects brief, sets mode, creates tracking files |
 | `/discovery` | Run the Discovery Team |
 | `/architecture` | Run the Design & Architecture Team (requires CP1 approval) |
 | `/build` | Run the Build Team (requires CP2 approval) |
 | `/checkpoint` | Review and action a checkpoint |
+| `/scope-change` | Handle a proposed scope change — assesses tier and manages re-work path |
+| `/release` | Run the release checklist and deploy to production |
+| `/retrospective` | Review the project and apply learnings back to the agency framework |
 | `/status` | Show current project phase and checkpoint statuses |
 
 ---
@@ -249,6 +255,7 @@ Cross-cutting methodologies used by multiple agents.
 | `skills/assumption-mapping.md` | Product Strategist, Systems Architect | Before finalizing any direction or architecture |
 | `skills/options-framing.md` | Orchestrator, Systems Architect, Engineering Lead | When escalating a fork-in-the-road decision |
 | `skills/scope-pressure-test.md` | Product Manager, Engineering Lead | To validate MVP scope and implementation plan |
+| `skills/security-review.md` | QA Engineer, Engineering Lead | Any task touching auth, data handling, or external input |
 
 ---
 

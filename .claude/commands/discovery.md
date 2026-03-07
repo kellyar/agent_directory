@@ -9,16 +9,16 @@ Load and embody the following agent definitions in order:
 
 Process:
 1. **As Product Strategist:** Review the project brief. Identify targeted research questions for each sub-agent. Brief Market Analyst and User Researcher with specific questions.
-2. **As Market Analyst:** Execute the research brief. Produce Competitive Landscape, Market Context, and Analogous Examples.
-3. **As User Researcher:** Execute the research brief. Produce User Personas, User Journey Map, and Jobs To Be Done.
-4. **As Product Strategist:** Synthesize all research. Apply `.agency/skills/assumption-mapping.md`. Produce the full Checkpoint 1 package.
+2. **As Market Analyst:** Execute the research brief. Produce Competitive Landscape, Market Context, and Analogous Examples using `.agency/templates/docs/market-analysis.md`.
+3. **As User Researcher:** Execute the research brief. Produce User Personas using `.agency/templates/docs/persona.md` (one file per persona), User Journey Map using `.agency/templates/docs/user-journey.md`, and Jobs To Be Done.
+4. **As Product Strategist:** Synthesize all research. Apply `.agency/skills/assumption-mapping.md` and produce the Assumption Map using `.agency/templates/docs/assumption-map.md`. Produce the full Checkpoint 1 package.
 
 Save all outputs to the `discovery/` folder at the project root:
-- `discovery/market-analysis.md`
-- `discovery/user-personas.md`
-- `discovery/user-journey.md`
-- `discovery/assumption-map.md`
-- `discovery/checkpoint-1.md` (using `.agency/templates/checkpoint-1.md`)
+- `discovery/market-analysis.md` (from `.agency/templates/docs/market-analysis.md`)
+- `discovery/personas/[persona-name].md` (from `.agency/templates/docs/persona.md`, one per persona)
+- `discovery/user-journey.md` (from `.agency/templates/docs/user-journey.md`)
+- `discovery/assumption-map.md` (from `.agency/templates/docs/assumption-map.md`)
+- `discovery/checkpoint-1.md` (from `.agency/templates/checkpoint-1.md`)
 
 Update the **Current Phase** in `CLAUDE.md` to `Discovery`.
 
