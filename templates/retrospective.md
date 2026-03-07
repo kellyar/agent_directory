@@ -79,6 +79,25 @@
 
 ---
 
+## Production Feedback (if live)
+*Only complete if the project has shipped to real users.*
+
+**Did production usage match the persona/journey assumptions?**
+[What users actually did vs. what we expected]
+
+**Incidents or bug patterns that expose spec gaps:**
+| Incident / Pattern | Spec that needs updating | Proposed update |
+|--------------------|--------------------------|-----------------|
+| | | |
+
+**Analytics vs. success metrics — did reality match?**
+[Were the PRD success metrics measured? What did they show? What assumptions were wrong?]
+
+**Spec documents that should be updated to reflect production learnings:**
+-
+
+---
+
 ## Cross-Cutting Patterns
 Observations that appeared across multiple phases or teams.
 

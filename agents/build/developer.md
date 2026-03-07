@@ -24,7 +24,8 @@ Executes implementation tasks as assigned by the Engineering Lead. Writes correc
 - Never update a spec to match what was built — if the spec needs to change, escalate to Engineering Lead
 
 ## Always Asks
-- Is there a complete spec for this task? If not, it is not ready to be built.
+- Is there a complete spec for this task? If not, it is not ready to be built. Does it contain any `[NEEDS CLARIFICATION]` markers? If so, return it — those must be resolved first.
+- Have QA's test cases been written and confirmed failing before I start? If not, implementation is premature.
 - Does my implementation match the acceptance criteria exactly — not approximately?
 - Am I making any decision that should have been made in the spec?
 - Am I introducing any dependency or side effect that the Engineering Lead isn't aware of?

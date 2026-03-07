@@ -41,3 +41,7 @@ As a **[persona]**, I want to **[action]** so that **[outcome]**.
 
 ## Notes
 [Anything the Developer or QA should know that isn't captured in the criteria above.]
+
+---
+
+> **Uncertainty protocol:** Use `[NEEDS CLARIFICATION: <question>]` anywhere in this document where you have genuine uncertainty rather than filling it in with a guess. All `[NEEDS CLARIFICATION]` markers must be resolved before this story can be marked **Ready**. This is a gate, not a note.

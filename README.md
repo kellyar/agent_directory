@@ -70,8 +70,9 @@ Full definitions for each agent are in `agents/`. Each defines: Role, Inputs, Ou
      ▼
 [/architecture] ── Systems Architect coordinates Technical Researcher,
      │              UX Designer, and Product Manager in parallel.
-     │              Produces: Architecture Doc, Tech Stack, Tradeoff Log,
-     │              Risk Register, PRD, User Stories, Prioritized Backlog
+     │              Produces: Architecture (structural decisions), Tech Stack,
+     │              Tradeoff Log, Risk Register, PRD, Epics + prioritised
+     │              epic backlog, IA + key flows. Stories elaborated later.
      │
      ▼
 ╔═══════════════════════════════╗
@@ -81,10 +82,12 @@ Full definitions for each agent are in `agents/`. Each defines: Role, Inputs, Ou
 ╚═══════════════════════════════╝
      │
      ▼
-[/build] ──────── Engineering Lead produces Implementation Plan + Code Standards.
-     │             QA Engineer defines Test Strategy before code is written.
-     │             Developers execute tasks. QA validates each task.
-     │             Engineering Lead reviews and integrates.
+[/build] ──────── Setup: Implementation Plan, CI/CD, Test Strategy,
+     │             Analytics Plan — before any code is written.
+     │             Each sprint: Backlog Refinement (PM + UX elaborate
+     │             next sprint's epics into stories) → Sprint Planning
+     │             → Execute (Dev → QA → Engineering Lead) → Sprint Review
+     │             Repeat until milestone complete.
      │
      ▼
 ╔═══════════════════════════════╗
@@ -94,7 +97,15 @@ Full definitions for each agent are in `agents/`. Each defines: Role, Inputs, Ou
 ╚═══════════════════════════════╝
      │
      ▼
+[/release] ───── Release checklist across code, infrastructure,
+     │            monitoring, analytics, docs. Human approval required.
+     │            Deploy → post-deploy monitoring → confirm healthy.
+     ▼
   Working Software
+
+[/retrospective] ── Review all phases. Propose and apply specific
+                    improvements back to agent_directory. Agency
+                    gets smarter with every project.
 ```
 
 ### Checkpoint Philosophy
@@ -186,7 +197,8 @@ After `/discovery`:
   discovery/
     checkpoint-1.md
     market-analysis.md
-    user-personas.md
+    personas/
+      [persona-name].md     ← one file per persona
     user-journey.md
     assumption-map.md
 ```
@@ -196,19 +208,34 @@ After `/architecture`:
   design/
     checkpoint-2.md
     architecture.md
-    prd.md
-    backlog.md
     tradeoff-log.md
     risk-register.md
-    ux-flows.md
+    prd.md
+    technical-research-report.md
+    ux-flows.md               ← IA, key flows, screen inventory (not all detailed screens)
+    epics/
+      EP-001-[slug].md        ← one per epic, approved at CP2
+    stories/                  ← empty at CP2; populated during backlog refinement
 ```
 
-After `/build`:
+After `/build` (grows sprint by sprint):
 ```
   build/
     code-standards.md
-    implementation-plan.md
+    implementation-plan.md    ← milestones → sprints → tasks, with reviews
+    infrastructure-plan.md
+    analytics-plan.md
+    test-strategy.md
+    test-cases/
+      [feature].md
     qa-reports/
+      [sprint-or-task].md
+    release-[version].md      ← after /release
+  design/
+    stories/
+      US-001-[slug].md        ← elaborated during backlog refinement, one sprint ahead
+    sprint-flows/
+      sprint-[N].md           ← detailed screen specs per sprint
   src/
     ...
 ```
@@ -252,8 +279,8 @@ Foundational beliefs that shape how all agents think and work — always in effe
 
 | Principle | Summary |
 |-----------|---------|
-| `principles/spec-driven-development.md` | Spec is written first and is always the source of truth. Code never drives spec changes. The spec hierarchy runs from Problem Statement → PRD → Architecture → Task Definition → Code. |
-| `principles/agile.md` | The build phase runs in sprints within milestones. Sprint planning, execution, and review define the working cadence. Velocity is tracked and used to plan — not to pressure the team. |
+| `principles/spec-driven-development.md` | Spec is written first and is always the source of truth. Code never drives spec changes. The spec hierarchy: Problem Statement → PRD (epics) → Architecture → Story (just-in-time) → Task → Code. |
+| `principles/agile.md` | Requirements are elaborated iteratively — structural architecture and epics at CP2, detailed stories just-in-time one sprint ahead via backlog refinement. Build runs in sprints within milestones. Backlog refinement, sprint planning, and sprint review are the core ceremonies. |
 
 ## Shared Skills
 
@@ -270,10 +297,50 @@ Cross-cutting methodologies used by multiple agents.
 
 ## Templates
 
+**Project-level**
 | Template | Used For |
 |----------|---------|
 | `templates/project-brief.md` | Created by `/new-project` |
-| `templates/checkpoint-1.md` | Compiled by Product Strategist + Orchestrator |
-| `templates/checkpoint-2.md` | Compiled by Systems Architect + PM + Orchestrator |
-| `templates/checkpoint-3.md` | Compiled by Engineering Lead + QA + Orchestrator |
 | `templates/project-CLAUDE.md` | Copy to project root as `CLAUDE.md` on setup |
+| `templates/decisions.md` | Decision log format, created by `/new-project` |
+| `templates/scope-change-request.md` | Created by `/scope-change` |
+| `templates/release-checklist.md` | Created by `/release` |
+| `templates/retrospective.md` | Created by `/retrospective` |
+
+**Checkpoints**
+| Template | Compiled By |
+|----------|-------------|
+| `templates/checkpoint-1.md` | Product Strategist + Orchestrator |
+| `templates/checkpoint-2.md` | Systems Architect + PM + Orchestrator (epics + structural architecture) |
+| `templates/checkpoint-3.md` | Engineering Lead + QA + Orchestrator |
+
+**Discovery docs** (`discovery/`)
+| Template | Created By |
+|----------|------------|
+| `templates/docs/persona.md` | User Researcher — one file per persona |
+| `templates/docs/user-journey.md` | User Researcher |
+| `templates/docs/market-analysis.md` | Market Analyst |
+| `templates/docs/assumption-map.md` | Product Strategist + Systems Architect |
+
+**Design & Architecture docs** (`design/`)
+| Template | Created By | When |
+|----------|------------|------|
+| `templates/docs/prd.md` | Product Manager | CP2 — epic-level requirements |
+| `templates/docs/epic.md` | Product Manager | CP2 — one per feature area |
+| `templates/docs/user-story.md` | Product Manager | Backlog refinement — one sprint ahead |
+| `templates/docs/ux-flows.md` | UX Designer | CP2 (IA + key flows); per sprint (detailed screens) |
+| `templates/docs/architecture.md` | Systems Architect | CP2 — structural decisions |
+| `templates/docs/tradeoff-log.md` | Systems Architect | CP2 + ongoing |
+| `templates/docs/risk-register.md` | Systems Architect | CP2 + ongoing |
+| `templates/docs/technical-research-report.md` | Technical Researcher | During architecture phase |
+
+**Build docs** (`build/`)
+| Template | Created By | When |
+|----------|------------|------|
+| `templates/docs/code-standards.md` | Engineering Lead | Before first commit |
+| `templates/docs/implementation-plan.md` | Engineering Lead | Build start |
+| `templates/docs/infrastructure-plan.md` | DevOps Engineer | Build start |
+| `templates/docs/analytics-plan.md` | Analytics Engineer | Build start |
+| `templates/docs/test-strategy.md` | QA Engineer | Before first commit |
+| `templates/docs/test-cases.md` | QA Engineer | Per sprint |
+| `templates/docs/qa-report.md` | QA Engineer | Per task / milestone |

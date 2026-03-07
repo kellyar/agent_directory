@@ -40,8 +40,11 @@ What "enough" means for this project. Be specific.
 
 - **Test environment:** [Where tests run — local, CI, staging]
 - **Test data approach:** [How test data is created and managed — fixtures, factories, seeded DB, etc.]
-- **External dependencies:** [How they're handled — mocks, stubs, sandbox accounts, contract tests]
+- **External dependencies:** [How they're handled — prefer real services (sandbox/test accounts) over mocks. If mocking, document why and what integration risk is accepted.]
 - **CI integration:** [Which tests run on every PR, which run on merge, which are manual]
+
+### Integration-First Stance
+Prefer tests that run against real services, databases, and infrastructure over mocked equivalents. Mocks hide integration failures — the very failures most likely to surface in production. Use mocks only when real services are: unavailable in CI, prohibitively slow (>10s added to CI), or incur per-call costs. Document every mock as a known gap in coverage.
 
 ---
 

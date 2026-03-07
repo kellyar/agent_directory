@@ -39,13 +39,21 @@ Apply throughout: `.agency/principles/agile.md` and `.agency/principles/spec-dri
 
 ## Sprint Loop — Repeat for Every Sprint Until Milestone Complete
 
+### Backlog Refinement (during current sprint, for the next sprint)
+This runs during the current sprint — not at the start of the next one. Refinement keeps sprint planning from being blocked on unready stories.
+
+**As Product Manager:** Take the next sprint's epics from `design/epics/`. Elaborate them into detailed user stories using `.agency/templates/docs/user-story.md`. Write full acceptance criteria, edge cases, and error states — informed by what building previous sprints has revealed. Save to `design/stories/[US-XXX]-[slug].md`.
+
+**As UX Designer:** Produce detailed screen specs for the next sprint's stories. All states (empty, loading, error, partial, full), all interactions, all edge cases. Update `design/ux-flows.md` with a sprint-specific section, or create `design/sprint-flows/sprint-[N].md`. Incorporate learnings from screens already built.
+
+**As Engineering Lead:** Review each elaborated story against the Definition of Ready. Stories not ready are returned to the PM for more elaboration — do not carry unready stories into sprint planning.
+
 ### Sprint Planning (start of each sprint)
 **As Engineering Lead:**
-1. Review the prioritised backlog in `design/stories/`
+1. Review the refined stories in `design/stories/` — these have already passed the Definition of Ready check during refinement
 2. Select stories for this sprint — highest value, highest dependency first
-3. Verify every selected story meets the Definition of Ready. Stories not ready go back to the backlog — do not commit them to the sprint.
-4. Set the sprint goal: one sentence describing what this sprint delivers
-5. Update the sprint planning section of `build/implementation-plan.md`
+3. Confirm sprint goal: one sentence describing what this sprint delivers
+4. Update the sprint planning section of `build/implementation-plan.md`
 
 ### Sprint Execution
 **As Engineering Lead:** Assign the first task with full context: task definition, acceptance criteria, architecture reference, code standards, security surface flag.

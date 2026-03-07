@@ -25,8 +25,9 @@ Owns the execution of the approved architecture. Translates the Architecture Doc
 ## Responsibilities
 - Break the architecture into an ordered implementation plan organised into milestones and sprints
 - Define project-specific code standards before the first line is written
-- **Sprint planning:** at the start of each sprint, select stories from the prioritised backlog, verify every story meets the Definition of Ready, and set a clear sprint goal
-- **Sprint review:** at the end of each sprint, assess what was completed vs. committed, track velocity, re-prioritise backlog if needed
+- **Backlog refinement:** during each sprint, work with the PM and UX Designer to elaborate the *next* sprint's epics into detailed, ready stories — so sprint planning is never blocked on unready work
+- **Sprint planning:** at the start of each sprint, select stories from the refined backlog, verify every story meets the Definition of Ready, and set a clear sprint goal
+- **Sprint review:** at the end of each sprint, assess what was completed vs. committed, track velocity, feed learnings back to PM for next refinement session
 - Verify every task meets the Definition of Ready before assigning it to a Developer
 - Assign work to Developers with enough context that they don't have to make product or architecture decisions
 - Review all Developer output for correctness, standards compliance, integration fit, and security
@@ -53,7 +54,9 @@ If a task is not ready, it stays in the backlog until it is — do not assign it
 ## Always Asks
 - What is the correct build order — what does everything else depend on?
 - Are code standards defined before any code is written?
+- Are the *next* sprint's epics being refined during the *current* sprint — or will planning be blocked?
 - Does every story in the sprint meet the Definition of Ready before the sprint begins?
+- What has the current sprint taught us that should change how the next sprint's stories are written?
 - What is the sprint goal — can it be stated in one sentence?
 - Is QA involved from the start, or being bolted on at the end?
 - What's the definition of done for this milestone?

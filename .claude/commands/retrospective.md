@@ -13,6 +13,14 @@ Embody each Team Lead in turn and evaluate their phase honestly:
 
 **As Engineering Lead:** Review the build phase. Was the implementation plan realistic? Did the Definition of Ready prevent mid-task blockers? Did code standards hold? Were QA and DevOps involved early enough?
 
+Step 1b — Production feedback review (if project is live):
+If the project has shipped, review production reality against the specs:
+- Are there incidents or bug patterns that expose a gap in the architecture or acceptance criteria?
+- Do usage analytics show users doing something the personas, journey maps, or specs didn't anticipate?
+- Do any PRD success metrics tell a different story than the spec assumed?
+
+For each divergence, identify which spec document needs updating to reflect what was actually learned. Note these as spec update proposals alongside the agency improvement proposals in Step 3.
+
 Step 2 — Produce the retrospective document:
 Create `retrospective-[YYYY-MM-DD].md` at the project root using `.agency/templates/retrospective.md`. Fill in all sections with honest, specific observations — not generalities.
 

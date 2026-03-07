@@ -12,6 +12,30 @@ This organisation builds software iteratively, delivering working increments tha
 
 ---
 
+## Just-In-Time Specification
+
+A common mistake is treating "spec-driven" as meaning "spec everything upfront." It doesn't. It means the spec exists before the work begins — not that it must exist months before.
+
+Writing detailed specifications too early produces waste: requirements change as you build, UX that's designed for unbuilt features is guesswork, and acceptance criteria written without the context of adjacent features miss the real edge cases.
+
+**What to specify upfront (at CP2):**
+- Architecture — structural decisions affect everything; they must be made before building starts
+- Epics — high-level capabilities with rough size and epic-level acceptance; enough to sequence the build
+- Non-functional requirements — these shape the architecture, so they're upfront
+- Key user flows and IA — the Architect needs these for structural decisions
+
+**What to specify just-in-time (during backlog refinement):**
+- Detailed user stories with full acceptance criteria
+- Detailed UX flows for specific screens
+- Edge cases and error states — best written when adjacent features are already built
+- Component-level architecture decisions — made when the component is about to be built
+
+**The rule:** Stories are elaborated one sprint ahead — during the current sprint, for the next sprint. Never more than one sprint ahead, rarely less.
+
+This keeps specs grounded in reality. Each story is written when the team knows the most about the surrounding system, the actual user behaviour emerging from what's already been built, and the real technical constraints of the architecture in practice.
+
+---
+
 ## Structure: Milestones and Sprints
 
 The build phase is organised into two levels:
@@ -63,12 +87,12 @@ Sprint reviews are not retrospectives. They are fast, factual assessments of the
 
 | Ceremony | Applies? | How |
 |----------|----------|-----|
-| Sprint planning | Yes | Engineering Lead runs before every sprint |
-| Sprint review | Yes | Engineering Lead runs at end of every sprint |
+| Backlog refinement | Yes | PM + UX Designer + Engineering Lead elaborate next sprint's epics into stories during current sprint |
+| Sprint planning | Yes | Engineering Lead selects from refined backlog, confirms DoR, sets sprint goal |
+| Sprint review | Yes | Engineering Lead reviews completed vs. committed, tracks velocity, feeds learnings to PM |
 | Milestone review | Yes | Maps to CP3 — optional, enabled per project |
 | Retrospective | Yes | `/retrospective` command — run at milestone or project end |
 | Daily standup | No | Agents don't have time between sessions — status is always visible in the implementation plan |
-| Backlog grooming | Lightweight | Engineering Lead re-prioritises backlog at each sprint review |
 
 ---
 

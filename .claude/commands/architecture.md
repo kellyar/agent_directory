@@ -8,22 +8,48 @@ Load and embody the following agent definitions:
 3. `.agency/agents/design-architecture/ux-designer.md`
 4. `.agency/agents/design-architecture/technical-researcher.md`
 
-Process:
-1. **As Systems Architect:** Review the CP1 package. Identify technical research questions and brief the Technical Researcher. Identify UX and requirements work to run in parallel.
-2. **As Technical Researcher:** Execute the research brief. Produce research reports using `.agency/templates/docs/technical-research-report.md`.
-3. **As UX Designer:** Review personas and journey maps from `discovery/`. Produce UX Flows using `.agency/templates/docs/ux-flows.md`.
-4. **As Product Manager:** Review CP1 package and UX flows. Produce the PRD using `.agency/templates/docs/prd.md` — ensuring Business Goals, Functional Requirements, Non-Functional Requirements, and Business Rules are all fully populated. Produce User Stories using `.agency/templates/docs/user-story.md` (one file per story in `design/stories/`). Apply `.agency/skills/scope-pressure-test.md` to validate MVP scope.
-5. **As Systems Architect:** Synthesize all inputs. Apply `.agency/skills/assumption-mapping.md` to the technical approach. Use `.agency/skills/options-framing.md` for significant architectural choices. Produce Architecture Document using `.agency/templates/docs/architecture.md`, Tradeoff Log using `.agency/templates/docs/tradeoff-log.md`, and Risk Register using `.agency/templates/docs/risk-register.md`.
+This phase produces **structural decisions and epic-level scope** — not fully elaborated stories. Stories are elaborated just-in-time during backlog refinement, one sprint before they are built. See `.agency/principles/agile.md`.
 
-Save all outputs to the `design/` folder at the project root:
-- `design/technical-research-report.md` (from `.agency/templates/docs/technical-research-report.md`)
-- `design/ux-flows.md` (from `.agency/templates/docs/ux-flows.md`)
-- `design/prd.md` (from `.agency/templates/docs/prd.md`)
-- `design/stories/[US-XXX]-[slug].md` (from `.agency/templates/docs/user-story.md`, one per story)
-- `design/architecture.md` (from `.agency/templates/docs/architecture.md`)
-- `design/tradeoff-log.md` (from `.agency/templates/docs/tradeoff-log.md`)
-- `design/risk-register.md` (from `.agency/templates/docs/risk-register.md`)
-- `design/checkpoint-2.md` (from `.agency/templates/checkpoint-2.md`)
+---
+
+## Process
+
+**1. As Systems Architect:** Review the CP1 package. Identify structural technical questions that must be resolved before architecture can be committed — brief the Technical Researcher on these. Structural decisions include: component boundaries, data model, tech stack, service interfaces, auth approach, infrastructure topology. Component-level implementation decisions are deferred to just-in-time during build.
+
+**2. As Technical Researcher:** Execute the research brief. Produce research reports using `.agency/templates/docs/technical-research-report.md`.
+
+**3. As UX Designer:** Review personas and journey maps from `discovery/`. Produce:
+- Information architecture and navigation model
+- Key user flows — happy-path flows for each persona's primary jobs to be done (enough for the Architect to understand data flow and auth boundaries)
+- Screen inventory — names and purposes of all distinct views, not detailed specs
+- Interaction principles — product-wide UX decisions
+Use `.agency/templates/docs/ux-flows.md` for structure. Detailed screen specs for each screen will be produced per sprint during build.
+
+**4. As Product Manager:** Review CP1 package and UX flows. Produce:
+- PRD using `.agency/templates/docs/prd.md` — fully populate Business Goals, Functional Requirements (at epic/feature level), Non-Functional Requirements, and Business Rules
+- Epics using `.agency/templates/docs/epic.md` (one per major feature area) — with rough size estimates and epic-level acceptance criteria. Do NOT elaborate into detailed user stories at this stage.
+- Prioritised epic backlog with MVP line clearly marked
+Apply `.agency/skills/scope-pressure-test.md` to validate the MVP epic set.
+
+**5. As Systems Architect:** Synthesise all inputs. Apply `.agency/skills/assumption-mapping.md` to the technical approach. Use `.agency/skills/options-framing.md` for significant architectural choices. Produce full Architecture Document, Tradeoff Log, and Risk Register.
+
+---
+
+## Saved Outputs
+
+```
+design/
+  technical-research-report.md     (.agency/templates/docs/technical-research-report.md)
+  ux-flows.md                       (.agency/templates/docs/ux-flows.md — IA, key flows, screen inventory)
+  prd.md                            (.agency/templates/docs/prd.md)
+  epics/
+    EP-001-[slug].md                (.agency/templates/docs/epic.md — one per epic)
+  stories/                          ← empty at CP2; populated during backlog refinement
+  architecture.md                   (.agency/templates/docs/architecture.md)
+  tradeoff-log.md                   (.agency/templates/docs/tradeoff-log.md)
+  risk-register.md                  (.agency/templates/docs/risk-register.md)
+  checkpoint-2.md                   (.agency/templates/checkpoint-2.md)
+```
 
 Update the **Current Phase** in `CLAUDE.md` to `Design & Architecture`.
 
