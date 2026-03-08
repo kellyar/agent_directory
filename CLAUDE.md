@@ -20,6 +20,9 @@ Do not store project briefs, decisions, or artifacts here. Those belong in the p
 | `/sprint` | Plan and run a single sprint, or resume a sprint in progress |
 | `/refine` | Run backlog refinement for the next sprint |
 | `/checkpoint` | Review and action a checkpoint |
+| `/github-branch` | Start a story: create the feature branch and open a Draft PR |
+| `/github-review` | Engineering Lead reviews an open PR and posts the review via `gh` |
+| `/github-status` | Show all open PRs, CI status, and what's blocking |
 | `/scope-change` | Handle a proposed scope change mid-project |
 | `/release` | Run the release checklist and deploy to production |
 | `/retrospective` | Review the project and apply learnings back to the agency |

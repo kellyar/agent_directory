@@ -141,6 +141,9 @@ In either mode, agents **always escalate** genuine blockers — a fork in the ro
 | `/checkpoint` | Review and action a checkpoint |
 | `/sprint` | Plan and run a single sprint, or resume a sprint in progress |
 | `/refine` | Run backlog refinement for the next sprint (PM + UX Designer) |
+| `/github-branch` | Start a story: create the feature branch and open a Draft PR |
+| `/github-review` | Engineering Lead reviews an open PR and posts the review via `gh` |
+| `/github-status` | Show all open PRs, CI status, and what's blocking |
 | `/scope-change` | Handle a proposed scope change — assesses tier and manages re-work path |
 | `/release` | Run the release checklist and deploy to production |
 | `/retrospective` | Review the project and apply learnings back to the agency framework |
