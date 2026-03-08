@@ -134,6 +134,7 @@ In either mode, agents **always escalate** genuine blockers — a fork in the ro
 | Command | What it does |
 |---------|-------------|
 | `/resume` | Reload project context at the start of any new session — always run this first |
+| `/context` | Save session state to `context.md` — run this before closing |
 | `/new-project` | Initialize a new project — collects brief, sets mode, creates tracking files |
 | `/discovery` | Run the Discovery Team |
 | `/architecture` | Run the Design & Architecture Team (requires CP1 approval) |
@@ -195,6 +196,7 @@ After running `/new-project`:
 ```
   project-brief.md      ← source of truth for all agents
   decisions.md          ← append-only decision log
+  context.md            ← session handoff (updated by /context, read first by /resume)
 ```
 
 After `/discovery`:

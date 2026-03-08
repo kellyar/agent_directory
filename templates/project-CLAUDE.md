@@ -23,6 +23,7 @@ When acting as any agent, load the relevant definition from `.agency/agents/` be
 |---------------|---------|
 | `project-brief.md` | Source of truth for all agents. Created by `/new-project`. |
 | `decisions.md` | Append-only log of every significant decision made, by whom, and why. |
+| `context.md` | Lightweight session handoff. Updated by `/context` at end of session; read first by `/resume`. |
 | `discovery/` | Discovery Team outputs (personas, market analysis, assumption map, CP1) |
 | `design/` | Design & Architecture Team outputs (PRD, architecture, backlog, UX flows, CP2) |
 | `build/` | Build Team outputs (implementation plan, code standards, QA reports, CP3 per milestone) |

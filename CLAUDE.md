@@ -13,6 +13,7 @@ Do not store project briefs, decisions, or artifacts here. Those belong in the p
 | Command | What it does |
 |---------|-------------|
 | `/resume` | Reload project context at the start of any new session — always run this first |
+| `/context` | Save the current session state to `context.md` — run this before closing |
 | `/new-project` | Initialize a new project |
 | `/discovery` | Run the Discovery Team |
 | `/architecture` | Run the Design & Architecture Team (requires CP1 approval) |

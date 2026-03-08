@@ -13,5 +13,6 @@ Collect the following from the user:
 Once collected:
 - Create `project-brief.md` at the project root using `.agency/templates/project-brief.md` as the template. Fill in everything known from the conversation.
 - Create `decisions.md` at the project root using `.agency/templates/decisions.md` as the template. Leave the log empty and ready for entries.
+- Create `context.md` at the project root using `.agency/templates/context.md` as the template. Set the current state to: Phase = Discovery, In progress = n/a, Next session = "Run /discovery".
 
 Confirm the project is initialized, summarize what was captured, and ask if the user is ready to run `/discovery`.
