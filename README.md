@@ -168,17 +168,14 @@ cd [project-name]
 # 2. Add agent_directory as a submodule
 git submodule add https://github.com/[you]/agent_directory .agency
 
-# 3. Run the setup script to symlink commands
+# 3. Run the setup script — scaffolds everything
 bash .agency/setup.sh
 
-# 4. Copy the project CLAUDE.md template
-cp .agency/templates/project-CLAUDE.md CLAUDE.md
-
-# 5. Commit the setup
+# 4. Commit the setup
 git add .
 git commit -m "Initialize agency framework"
 
-# 6. Open Claude Code and run /new-project
+# 5. Open Claude Code and run /new-project
 ```
 
 ### What You Get After Setup
