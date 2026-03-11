@@ -67,4 +67,6 @@
 **Notes:**
 [Rationale, conditions, or what to revisit later]
 
+**Sprint assignment for new stories:** [Sprint X.Y — required if any new stories are added. A scope change without a sprint assignment is not in scope.]
+
 **Logged in decisions.md:** Yes / No

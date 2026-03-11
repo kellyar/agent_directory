@@ -2,6 +2,8 @@
 
 *File naming: `build/checkpoint-3-M[N].md` where N is the milestone number (e.g. `checkpoint-3-M1.md`, `checkpoint-3-M2.md`). One file per milestone.*
 
+**REQUIRED:** This document must be created as the final task of the last sprint in each milestone. Creating it is not optional — a milestone without a CP3 document is considered incomplete regardless of stories delivered. Do not begin the next milestone until this document exists and has been reviewed.
+
 **Project:** [Project Name]
 **Milestone:** [Milestone Name / Number]
 **Date:** [YYYY-MM-DD]
