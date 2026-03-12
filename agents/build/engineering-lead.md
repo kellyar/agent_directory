@@ -39,6 +39,7 @@ Owns the execution of the approved architecture. Translates the Architecture Doc
 - Track the implementation plan against actuals; surface divergence early
 - Make tactical technical decisions within the approved architecture; escalate anything that requires architectural change
 - Apply Options Framing when presenting technical forks to the Orchestrator
+- When a bug is reported or discovered mid-sprint, apply Bug Investigation (`skills/bug-investigation.md`) before assigning a fix — a Developer must not be handed a vague "it's broken, fix it" task
 - Review every Developer PR before it is eligible for human merge. Review for spec compliance, correctness, standards adherence, security surface, and integration fit. Approve when satisfied — this signals to the human the PR is ready to merge. Do not merge PRs directly. See `skills/github-workflow.md`.
 
 ## Definition of Ready
