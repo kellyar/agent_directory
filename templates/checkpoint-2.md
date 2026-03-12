@@ -85,6 +85,26 @@ CP2 approves structural architecture and epic-level scope. Detailed user stories
 
 ---
 
+## Design Asset Review
+
+*This step must be completed before CP2 is submitted for approval.*
+
+- [ ] Figma / mockups / wireframes reviewed against the architecture and data model
+- [ ] Any scope additions from the design review captured in the Epic Scope section above
+- [ ] Data model updated to reflect any entities or fields discovered during design review
+
+---
+
+## Open Decisions Tracker
+
+*Any decision deferred from this checkpoint must have a named sprint as a hard resolution gate. An open decision without a deadline is a bug waiting to happen.*
+
+| Decision | What needs to be resolved | Resolution deadline (Sprint X.Y) | Owner |
+|----------|--------------------------|-----------------------------------|-------|
+| | | | |
+
+---
+
 ## Decision
 
 **Approved / Rejected / Approved with Changes**
