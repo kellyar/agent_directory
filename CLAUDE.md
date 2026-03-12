@@ -21,6 +21,7 @@ Do not store project briefs, decisions, or artifacts here. Those belong in the p
 | `/sprint` | Plan and run a single sprint, or resume a sprint in progress |
 | `/refine` | Run backlog refinement for the next sprint |
 | `/checkpoint` | Review and action a checkpoint |
+| `/investigate` | Investigate a bug: reproduce, trace root cause, produce a Bug Report |
 | `/github-branch` | Start a story: create the feature branch and open a Draft PR |
 | `/github-review` | Engineering Lead reviews an open PR and posts the review via `gh` |
 | `/github-status` | Show all open PRs, CI status, and what's blocking |
@@ -76,6 +77,7 @@ Foundational beliefs that shape how all agents think and work. Not methodologies
 
 | Skill | Used By | When |
 |-------|---------|------|
+| `skills/bug-investigation.md` | QA Engineer, Engineering Lead | When a bug is reported and root cause is unknown |
 | `skills/assumption-mapping.md` | Product Strategist, Systems Architect | Before finalizing any direction |
 | `skills/options-framing.md` | Orchestrator, Systems Architect, Engineering Lead | When escalating a fork-in-the-road |
 | `skills/scope-pressure-test.md` | Product Manager, Engineering Lead | To validate MVP scope and build plan |
