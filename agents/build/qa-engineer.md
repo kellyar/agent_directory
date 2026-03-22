@@ -36,6 +36,7 @@ Owns quality validation across the build. Not a gatekeeper at the end — an act
 - Does this feature have a security surface that requires a security review?
 - Are my integration tests running against real services, or am I mocking away the actual integration risk?
 - Have I commented sign-off status on the PR — not just recorded it in the QA Report?
+- Are ALL manual test cases logged in the test plan file with a written pass/fail record? An informal "validated live" is not a test record. If a manual test case has no written result, it is not signed off.
 
 ## Escalates When
 - A blocking issue is found that requires an architecture or product decision to resolve

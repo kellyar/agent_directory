@@ -46,6 +46,26 @@ Stories that **fail**: return to PM or UX Designer with specific feedback on wha
 
 ---
 
+## Human Walkthrough
+
+Before marking any stories Ready, present a walkthrough to the human reviewer. For each story:
+
+1. **Title and goal** — one sentence on what this story delivers and why
+2. **Key acceptance criteria** — the 3–5 most important pass/fail criteria (not the full list — the ones where a misunderstanding would cause the most rework)
+3. **Edge cases flagged** — any scenarios that required a non-obvious decision
+4. **Open questions** — any `[NEEDS CLARIFICATION]` markers still unresolved
+
+After presenting all stories, ask: *"Does this match your intent for the sprint? Are there details that are wrong, missing, or that you want to go deeper on before we lock these?"*
+
+If the human provides feedback:
+- Return to PM or UX Designer to revise the affected stories
+- Re-present the revised stories before marking Ready
+- Repeat until the human confirms
+
+Only mark stories as **Ready** after the human has explicitly confirmed them. Do not proceed to sprint planning without this confirmation.
+
+---
+
 ## Output
 
 Confirm:

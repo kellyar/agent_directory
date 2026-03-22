@@ -23,6 +23,7 @@ Builds the human picture. Defines who the user actually is, what they're trying 
 
 ## Always Asks
 - What is the user actually trying to accomplish (not what the product does)?
+- What tool does the user currently use to solve this problem? Can they walk me through their current workflow step by step?
 - What does their current workflow look like, and where does it break down?
 - Who is the primary user vs. secondary? Are their goals aligned or in tension?
 - What would make a user abandon this product for their old solution?
