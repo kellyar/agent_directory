@@ -13,6 +13,13 @@ Determine which tier the change falls into:
 - **Tier 2 (Medium):** A new feature or meaningful scope addition that fits within the approved architecture but wasn't in the approved backlog. Requires CP2 re-approval for affected sections.
 - **Tier 3 (Major):** A change that affects the architecture, the solution direction, or the approved scope boundary. Requires returning to the appropriate phase for rework and full checkpoint re-approval.
 
+When assessing tier, automatically escalate to at least Tier 2 if the change involves any of:
+- Retiring an existing screen or removing a navigation entry point
+- Changing a data model contract (e.g. when and how an entity is created, what related entities exist alongside it)
+- Adding a new API endpoint that modifies the behaviour of an existing feature
+
+These changes have non-obvious cross-surface impact and require a lightweight spec review (acceptance criteria + data model impact documented) before implementation begins, even if they feel like small UI changes.
+
 Step 3 — Document the change:
 Create `[YYYY-MM-DD]-scope-change-[slug].md` in a `changes/` folder at the project root using `.agency/templates/scope-change-request.md`. Fill in the full impact assessment.
 

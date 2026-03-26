@@ -33,6 +33,7 @@ A structured adversarial review applied to code and architecture to surface secu
 - Are API keys, secrets, and credentials in environment variables — never hardcoded or committed?
 - Is sensitive data (PII, payment info, health data) encrypted at rest and in transit?
 - Are sensitive fields excluded from logs?
+- Are any tokens, session IDs, invitation URLs, or credentials written to application logs — including `console.log`, `logger.debug`, or any other log level? This includes temporary debug logging that may have been left in.
 - Is the minimum data collected and retained for the minimum time needed?
 
 ### 4. Dependencies

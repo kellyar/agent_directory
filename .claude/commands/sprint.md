@@ -59,6 +59,7 @@ At the end of the sprint, update `build/implementation-plan.md` sprint review se
 2. Velocity (stories completed this sprint)
 3. Carry-overs and why
 4. New information from this sprint that affects backlog priority
+5. Non-blocking security findings: any security observations deferred in QA reports this sprint must be converted to backlog stories before the sprint is closed. Record the story ID in the QA report that raised the finding. A deferred security finding with no backlog story has no owner and will not be actioned.
 
 ---
 
