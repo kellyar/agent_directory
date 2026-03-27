@@ -31,6 +31,7 @@ This checklist is the final gate before production deployment. Every item must b
 - [ ] Deployment runbook is up to date and tested
 - [ ] Rollback procedure is documented and tested
 - [ ] Database migrations (if any) are backwards-compatible or have a rollback plan
+- [ ] Database migration step confirmed to run successfully in the production environment (not just locally)
 
 ## Monitoring & Observability
 

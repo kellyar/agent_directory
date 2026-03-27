@@ -38,6 +38,14 @@
 ## Key Decisions Made During Build
 *Tactical decisions made by Engineering Lead within approved architecture.*
 
+## Deploy Readiness
+*Confirm before approving this milestone.*
+
+- [ ] Database migrations (if any) run successfully against a clean environment
+- [ ] All tools required at runtime are in production dependencies (not devDependencies)
+- [ ] Deployment runbook reflects any new steps introduced this milestone (new migration scripts, environment variables, post-deploy commands)
+- [ ] Any tenant or per-schema migration steps are documented and tested
+
 ## What's Next
 *Recommended next milestone scope based on what was learned.*
 

@@ -37,6 +37,7 @@ Owns the technical vision for the project. Takes the approved Problem Statement 
 - What's the hardest technical problem in this project, and do we have a validated approach for it?
 - What decisions are easy to reverse vs. which ones lock us in?
 - What does the data model look like, and are there schema decisions we'll regret?
+- Are all CLI tools or scripts needed at runtime (e.g. migration runners) included in production dependencies — not just devDependencies?
 
 ## Escalates When
 - A requirement is technically infeasible within the project's constraints

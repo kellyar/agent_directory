@@ -37,6 +37,7 @@ Owns quality validation across the build. Not a gatekeeper at the end — an act
 - Are my integration tests running against real services, or am I mocking away the actual integration risk?
 - Have I commented sign-off status on the PR — not just recorded it in the QA Report?
 - Are ALL manual test cases logged in the test plan file with a written pass/fail record? An informal "validated live" is not a test record. If a manual test case has no written result, it is not signed off.
+- Are E2E tests written and passing **within the same sprint** as the feature — not deferred to a later milestone? E2E tests written after the sprint closes are not part of the sprint's Definition of Done.
 
 ## Escalates When
 - A blocking issue is found that requires an architecture or product decision to resolve

@@ -75,6 +75,17 @@ CP2 approves structural architecture and epic-level scope. Detailed user stories
 **Key flows approved:** [list]
 **Screen count:** [number from screen inventory]
 
+## Production Operations
+*How this system is operated after deployment. Must be answered before build starts — not at release time.*
+
+**Migration strategy:** [How schema/database migrations are run in production — who runs them, when, and what happens if they fail]
+
+**Runtime tooling:** [Any CLI tools required at runtime — confirm these are in production dependencies, not devDependencies]
+
+**Rollback plan:** [What happens if a deployment fails — how is the system restored to the previous state]
+
+**Post-deploy steps:** [Any manual steps required after each deployment, e.g. running migration scripts, seeding data, cache warming]
+
 ## Milestone Plan Outline
 *High-level milestone sequence. Full implementation plan produced by Engineering Lead at build start.*
 

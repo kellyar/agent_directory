@@ -39,6 +39,7 @@ Focus on **High Impact / Low Confidence** assumptions — these are the ones tha
 Produce an **Assumption Map** with:
 - All assumptions listed
 - Each rated by confidence and impact
+- A **Validation Method** for each assumption — the concrete way this assumption will be proven true or false (e.g. "unit test suite", "user interview", "analytics event", "load test", "manual QA"). If no validation method can be identified, that is a signal the assumption needs more discovery before proceeding.
 - Priority actions for High Impact / Low Confidence items
 - Open questions that require human input or further research
 

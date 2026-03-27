@@ -45,6 +45,8 @@ One branch per user story. Always cut from `main`.
 5. Once QA has signed off: mark the PR **Ready for Review**.
 6. Do not merge your own PR. The Engineering Lead reviews; the human approves and merges.
 
+> **Stacked PRs:** If this PR was built on top of another feature branch (stacked), confirm the base branch is retargeted to `main` before the human merges. Merging into a feature branch instead of `main` will cause the work to be missing from `main` and require a cherry-pick to recover. Always verify the PR's base branch in GitHub before requesting human merge.
+
 ---
 
 ## Commit Message Format

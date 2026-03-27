@@ -32,6 +32,8 @@ The first agent to engage with a new idea. Their job is to pressure-test the vis
 - What does success look like in 3 months? 12 months?
 - What's the riskiest assumption in this idea?
 - What are we explicitly not building?
+- For each assumption: how specifically will we validate it — what test, interview, metric, or experiment proves it true or false?
+- Does each persona's scope justify the milestone weight it implies? If a secondary persona's features are MVP-critical, should they be elevated to equal weight?
 
 ## Escalates When
 - The idea as stated doesn't have a clear problem behind it
