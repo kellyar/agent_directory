@@ -28,6 +28,7 @@ A structured adversarial review applied to code and architecture to surface secu
 - Is there any way to escalate privileges or access another user's data by manipulating IDs or parameters? (Insecure Direct Object Reference)
 - Are session tokens invalidated on logout and expiry?
 - Are failed login attempts rate-limited?
+- **Bootstrap accessibility:** Are there endpoints that must be reachable before a session exists (e.g., user listing or creation on fresh install)? If yes, verify they are explicitly marked public and contain no data requiring auth protection. A misconfigured bootstrap endpoint either breaks first-run UX or exposes data — both are findings.
 
 ### 2. Input Validation & Injection
 - Is all user input validated and sanitised before use?
@@ -41,6 +42,7 @@ A structured adversarial review applied to code and architecture to surface secu
 - Are API keys, secrets, and credentials in environment variables — never hardcoded or committed?
 - Is sensitive data (PII, payment info, health data) encrypted at rest and in transit?
 - Are sensitive fields excluded from logs?
+- Are any tokens, session IDs, invitation URLs, or credentials written to application logs — including `console.log`, `logger.debug`, or any other log level? This includes temporary debug logging that may have been left in.
 - Is the minimum data collected and retained for the minimum time needed?
 
 ### 4. Dependencies

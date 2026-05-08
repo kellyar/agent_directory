@@ -11,11 +11,11 @@ See `.agency/skills/assumption-mapping.md` for the methodology.
 
 ## All Assumptions
 
-| # | Assumption | Category | Confidence | Impact | Quadrant |
-|---|------------|----------|------------|--------|----------|
-| 1 | | User / Market / Technical / Business | Low/Med/High | Low/Med/High | |
-| 2 | | | | | |
-| 3 | | | | | |
+| # | Assumption | Category | Confidence | Impact | Quadrant | Validation Method |
+|---|------------|----------|------------|--------|----------|-------------------|
+| 1 | | User / Market / Technical / Business | Low/Med/High | Low/Med/High | | Research / User interview / Prototype test / Analytics / Acceptance criterion |
+| 2 | | | | | | |
+| 3 | | | | | | |
 
 **Quadrant key:**
 - **A** = High Impact / Low Confidence → Must validate

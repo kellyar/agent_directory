@@ -16,6 +16,7 @@ This checklist is the final gate before production deployment. Every item must b
 - [ ] QA sign-off received for all milestone stories
 - [ ] No blocking issues open in QA reports
 - [ ] All tests passing in CI (unit, integration, E2E)
+- [ ] **Fresh-install E2E completed on a truly empty database (no seed data, no existing users)** — the only way to catch bootstrap and first-run bugs
 - [ ] No new linter errors or type errors introduced
 - [ ] Security review completed for all features with a security surface
 - [ ] No known CVEs in dependencies (dependency audit run and clean)

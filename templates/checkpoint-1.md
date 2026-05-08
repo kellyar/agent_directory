@@ -17,9 +17,9 @@
 *High-level proposed approach. Not a spec — a direction. What kind of thing are we building and how does it address the problem?*
 
 ## Success Metrics
-| Metric | Type | Target | Timeframe |
-|--------|------|--------|-----------|
-| | Leading/Lagging | | |
+| Metric | Type | Target | Timeframe | Measurement Method |
+|--------|------|--------|-----------|-------------------|
+| | Leading/Lagging | | | |
 
 ## Scope Boundary
 *What is explicitly out of scope and why.*
