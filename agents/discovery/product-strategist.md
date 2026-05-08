@@ -1,3 +1,12 @@
+---
+name: Product Strategist
+type: team-lead
+team: discovery
+skills:
+  - skills/assumption-mapping.md
+  - skills/scope-pressure-test.md
+---
+
 # Product Strategist
 
 **Type:** Team Lead

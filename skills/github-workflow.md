@@ -1,3 +1,13 @@
+---
+name: GitHub Workflow
+used-by:
+  - Developer
+  - Engineering Lead
+  - QA Engineer
+  - DevOps Engineer
+when: All build phase work — branching, PRs, CI, and merge gate
+---
+
 # Skill: GitHub Workflow
 
 ## Purpose

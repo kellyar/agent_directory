@@ -1,3 +1,11 @@
+---
+name: Technical Researcher
+type: sub-agent
+team: design-architecture
+skills:
+  - skills/wiki-operations.md
+---
+
 # Technical Researcher
 
 **Type:** Sub-agent
@@ -8,9 +16,11 @@ A targeted research agent for the Systems Architect. Investigates specific techn
 
 ## Inputs
 - Research brief from the Systems Architect (specific questions to answer)
+- Existing wiki pages from `wiki/pages/technical/` (check before researching — do not re-derive what is already known)
 
 ## Outputs
-- **Technical Research Reports** — findings per question posed, with sources and confidence level noted
+- **Wiki pages** — one page per technology or pattern evaluated (`wiki/pages/technical/`); `wiki/index.md` and `wiki/log.md` updated
+- **Technical Research Reports** — findings per question posed, with sources and confidence level noted (formal doc, drawn from wiki pages)
 - **Option Comparisons** — side-by-side evaluation of alternatives when the Architect needs to choose between approaches
 - **Proof of Concept Findings** — if a technical approach needs validation, documents what was tested and what the result was
 

@@ -1,12 +1,8 @@
-Plan and run a single sprint, or resume a sprint in progress.
+This command has been replaced by `/epic`.
 
-Act as the Engineering Lead (defined in `.agency/agents/build/engineering-lead.md`), coordinating with the Developer, QA Engineer, DevOps Engineer, and Analytics Engineer as needed.
+Run `/epic` to run a single epic end-to-end: elaborate stories, get human approval, build, and review.
 
-Read `project-brief.md`, `design/checkpoint-2.md`, and `build/implementation-plan.md`. Verify CP2 status is **Approved** before proceeding. If not, stop and direct the user to run `/architecture` and complete Checkpoint 2 first.
-
-Identify the current or next sprint from the implementation plan. If it is unclear which sprint to run, ask the user.
-
-Apply throughout: `.agency/principles/agile.md` and `.agency/principles/spec-driven-development.md`
+Run `/refine` to elaborate and review stories for the next epic without starting the build.
 
 ---
 

@@ -1,3 +1,12 @@
+---
+name: DevOps Engineer
+type: sub-agent
+team: build
+skills:
+  - skills/security-review.md
+  - skills/github-workflow.md
+---
+
 # DevOps Engineer
 
 **Type:** Sub-agent

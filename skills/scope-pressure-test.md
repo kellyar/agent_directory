@@ -1,3 +1,11 @@
+---
+name: Scope Pressure Test
+used-by:
+  - Product Manager
+  - Engineering Lead
+when: Validating MVP scope at CP2 (PM) and validating the implementation plan is buildable (Engineering Lead)
+---
+
 # Skill: Scope Pressure Test
 
 ## Purpose

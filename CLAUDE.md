@@ -15,11 +15,13 @@ Do not store project briefs, decisions, or artifacts here. Those belong in the p
 | `/resume` | Reload project context at the start of any new session — always run this first |
 | `/context` | Save the current session state to `context.md` — run this before closing |
 | `/new-project` | Initialize a new project |
+| `/new-wiki` | Set up the wiki knowledge base (run automatically by `/new-project`) |
+| `/wiki-lint` | Health-check the wiki: orphans, contradictions, knowledge gaps |
 | `/discovery` | Run the Discovery Team |
 | `/architecture` | Run the Design & Architecture Team (requires CP1 approval) |
 | `/build` | Run the Build Team (requires CP2 approval) |
-| `/sprint` | Plan and run a single sprint, or resume a sprint in progress |
-| `/refine` | Run backlog refinement for the next sprint |
+| `/epic` | Run a single epic: elaborate stories, get approval, build, review |
+| `/refine` | Elaborate and review stories for the next epic before starting it |
 | `/checkpoint` | Review and action a checkpoint |
 | `/investigate` | Investigate a bug: reproduce, trace root cause, produce a Bug Report |
 | `/github-branch` | Start a story: create the feature branch and open a Draft PR |
@@ -71,7 +73,7 @@ Foundational beliefs that shape how all agents think and work. Not methodologies
 | Principle | Applies To | Summary |
 |-----------|-----------|---------|
 | `principles/spec-driven-development.md` | All agents | Spec is written first and is the source of truth. Code never drives spec changes. Use `[NEEDS CLARIFICATION]` to flag uncertainty explicitly — it's a gate, not a note. Tests are written before code and confirmed failing. The spec hierarchy runs Problem Statement → PRD (epics) → Architecture → Story (just-in-time) → Task → Code. Production reality feeds back into updated specs via the retrospective. |
-| `principles/agile.md` | Build Team | Requirements are elaborated iteratively — architecture and epics upfront at CP2, detailed stories just-in-time one sprint ahead via backlog refinement. Build runs in sprints within milestones. Velocity tracked and used to plan. |
+| `principles/agile.md` | Build Team | Requirements are elaborated iteratively — architecture and epics upfront at CP2, detailed stories just-in-time before each epic starts. Build runs epic by epic within milestones. |
 
 ## Shared Skills
 
@@ -83,6 +85,7 @@ Foundational beliefs that shape how all agents think and work. Not methodologies
 | `skills/scope-pressure-test.md` | Product Manager, Engineering Lead | To validate MVP scope and build plan |
 | `skills/security-review.md` | QA Engineer, Engineering Lead | Any task touching auth, data handling, or external input |
 | `skills/github-workflow.md` | Developer, Engineering Lead, QA Engineer, DevOps Engineer | All build phase work — branching, PRs, and merge gate |
+| `skills/wiki-operations.md` | Market Analyst, Technical Researcher | Ingesting research into the wiki; querying for prior knowledge |
 
 ## Submodule Usage
 

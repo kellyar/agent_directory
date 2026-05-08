@@ -1,12 +1,10 @@
-Run backlog refinement for the next sprint.
+Elaborate and review stories for the next epic before starting it.
 
 Act as the Product Manager (defined in `.agency/agents/design-architecture/product-manager.md`) and UX Designer (defined in `.agency/agents/design-architecture/ux-designer.md`), coordinated by the Engineering Lead (`.agency/agents/build/engineering-lead.md`).
 
-Backlog refinement runs during the *current* sprint, for the *next* sprint — not at sprint start. Its purpose is to ensure stories are Ready before sprint planning, so planning is never blocked on unready work.
+Read `project-brief.md`, `design/checkpoint-2.md`, `build/implementation-plan.md`, and the epics in `design/epics/` to identify the next epic in priority that does not yet have Ready stories.
 
-Read `project-brief.md`, `design/checkpoint-2.md`, `build/implementation-plan.md`, and the epics in `design/epics/` to identify which epic(s) are next in priority. Read the most recent sprint review section in `build/implementation-plan.md` for learnings to apply.
-
-Apply: `.agency/principles/agile.md` and `.agency/principles/spec-driven-development.md`
+Apply: `.agency/principles/spec-driven-development.md`
 
 ---
 
@@ -14,21 +12,20 @@ Apply: `.agency/principles/agile.md` and `.agency/principles/spec-driven-develop
 
 **As Product Manager:**
 
-1. Identify the next sprint's epics from the prioritised backlog in `design/epics/`
-2. Elaborate each epic into detailed user stories using `.agency/templates/docs/user-story.md`:
+1. Identify the next epic from the prioritised backlog in `design/epics/`
+2. Elaborate it into detailed user stories using `.agency/templates/docs/user-story.md`:
    - Write full acceptance criteria — specific, testable, pass/fail
-   - Specify edge cases and error states — informed by what building previous sprints has revealed
-   - Incorporate learnings from previous sprint reviews
+   - Specify edge cases and error states — informed by anything already built in prior epics
    - Use `[NEEDS CLARIFICATION]` for any genuine uncertainty — these are gates, not notes. They must be resolved before the story can be marked Ready.
 3. Save each story to `design/stories/[US-XXX]-[slug].md`
 
 **As UX Designer:**
 
-1. For each elaborated story that has UI-facing work, produce detailed screen specs using `.agency/templates/docs/sprint-flow.md`
+1. For each elaborated story with UI-facing work, produce detailed screen specs
 2. Document all screen states: empty, loading, error, partial data, full
 3. Specify all interactions, validations, and edge cases
-4. Incorporate learnings from previous sprints — what did building previous screens teach us?
-5. Save to `design/sprint-flows/sprint-[X.Y].md` (where X.Y is the next sprint number)
+4. Incorporate learnings from screens already built
+5. Save to `design/epic-flows/[epic-slug].md`
 
 **As Engineering Lead:**
 
@@ -55,7 +52,7 @@ Before marking any stories Ready, present a walkthrough to the human reviewer. F
 3. **Edge cases flagged** — any scenarios that required a non-obvious decision
 4. **Open questions** — any `[NEEDS CLARIFICATION]` markers still unresolved
 
-After presenting all stories, ask: *"Does this match your intent for the sprint? Are there details that are wrong, missing, or that you want to go deeper on before we lock these?"*
+After presenting all stories, ask: *"Does this match your intent for this epic? Are there details that are wrong, missing, or that you want to go deeper on before we lock these?"*
 
 If the human provides feedback:
 - Return to PM or UX Designer to revise the affected stories
@@ -69,8 +66,9 @@ Only mark stories as **Ready** after the human has explicitly confirmed them. Do
 ## Output
 
 Confirm:
-- How many stories are now Ready for the next sprint
+- Epic name and goal
+- How many stories are now Ready (list with one-line summaries, in build order)
 - Any stories returned for more elaboration, with specific reasons
-- Whether the next sprint's Ready story count is sufficient given prior velocity
+- Any unresolved `[NEEDS CLARIFICATION]` items requiring human input
 
-If the next sprint cannot be filled with Ready stories, flag this to the user before sprint planning begins — do not start a sprint with unready stories.
+Ask if the user wants to proceed to `/epic` or if there are clarifications to resolve first.

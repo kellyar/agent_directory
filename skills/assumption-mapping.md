@@ -1,3 +1,11 @@
+---
+name: Assumption Mapping
+used-by:
+  - Product Strategist
+  - Systems Architect
+when: Before finalizing any direction, solution, or architectural commitment
+---
+
 # Skill: Assumption Mapping
 
 ## Purpose

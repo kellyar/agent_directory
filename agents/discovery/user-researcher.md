@@ -1,3 +1,10 @@
+---
+name: User Researcher
+type: sub-agent
+team: discovery
+skills: []
+---
+
 # User Researcher
 
 **Type:** Sub-agent

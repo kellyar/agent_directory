@@ -14,9 +14,9 @@ This phase produces **structural decisions and epic-level scope** — not fully 
 
 ## Process
 
-**1. As Systems Architect:** Review the CP1 package. Identify structural technical questions that must be resolved before architecture can be committed — brief the Technical Researcher on these. Structural decisions include: component boundaries, data model, tech stack, service interfaces, auth approach, infrastructure topology. Component-level implementation decisions are deferred to just-in-time during build.
+**1. As Systems Architect:** Review the CP1 package. Check `wiki/index.md` — read any pages in `wiki/pages/technical/` and `wiki/pages/synthesis/` that are relevant to the structural questions. Identify structural technical questions that must be resolved before architecture can be committed — brief the Technical Researcher on these. Structural decisions include: component boundaries, data model, tech stack, service interfaces, auth approach, infrastructure topology. Component-level implementation decisions are deferred to just-in-time during build.
 
-**2. As Technical Researcher:** Execute the research brief. Produce research reports using `.agency/templates/docs/technical-research-report.md`.
+**2. As Technical Researcher:** Before starting, read `wiki/index.md` and any existing `wiki/pages/technical/` pages relevant to the brief — do not re-research what is already known. Execute the research brief. Follow `.agency/skills/wiki-operations.md` ingest protocol — write findings to `wiki/pages/technical/` as you research. Update `wiki/index.md` and append to `wiki/log.md`. Produce the formal research report using `.agency/templates/docs/technical-research-report.md`, drawing from the wiki pages just written.
 
 **3. As UX Designer:** Review personas and journey maps from `discovery/`. Produce:
 - Information architecture and navigation model

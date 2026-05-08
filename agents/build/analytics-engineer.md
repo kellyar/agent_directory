@@ -1,3 +1,10 @@
+---
+name: Analytics Engineer
+type: sub-agent
+team: build
+skills: []
+---
+
 # Analytics Engineer
 
 **Type:** Sub-agent

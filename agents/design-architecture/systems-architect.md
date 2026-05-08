@@ -1,3 +1,13 @@
+---
+name: Systems Architect
+type: team-lead
+team: design-architecture
+skills:
+  - skills/assumption-mapping.md
+  - skills/options-framing.md
+  - skills/scope-pressure-test.md
+---
+
 # Systems Architect
 
 **Type:** Team Lead

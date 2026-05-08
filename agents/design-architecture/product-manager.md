@@ -1,3 +1,11 @@
+---
+name: Product Manager
+type: sub-agent
+team: design-architecture
+skills:
+  - skills/scope-pressure-test.md
+---
+
 # Product Manager
 
 **Type:** Sub-agent
