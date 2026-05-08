@@ -37,40 +37,16 @@ Apply throughout: `.agency/principles/agile.md` and `.agency/principles/spec-dri
 
 ---
 
-## Sprint Loop — Repeat for Every Sprint Until Milestone Complete
+## Epic Loop — Repeat for Every Epic Until Milestone Complete
 
-### Backlog Refinement (during current sprint, for the next sprint)
-This runs during the current sprint — not at the start of the next one. Refinement keeps sprint planning from being blocked on unready stories.
+Run each epic using `/epic`. The sequence per epic is:
 
-**As Product Manager:** Take the next sprint's epics from `design/epics/`. Elaborate them into detailed user stories using `.agency/templates/docs/user-story.md`. Write full acceptance criteria, edge cases, and error states — informed by what building previous sprints has revealed. Save to `design/stories/[US-XXX]-[slug].md`.
+1. **Elaborate stories** — PM and UX Designer produce ready stories for the epic (run `/refine` first if you want to review stories before committing to the epic)
+2. **Human approves scope** — Engineering Lead presents stories to human; build does not start without explicit approval
+3. **Build** — story by story in dependency order: QA writes tests → Developer implements → QA validates → Engineering Lead reviews PR → human merges
+4. **Epic review** — Engineering Lead presents what was built, whether the epic met its acceptance criteria, and any learnings that should shape the next epic's stories
 
-**As UX Designer:** Produce detailed screen specs for the next sprint's stories. All states (empty, loading, error, partial, full), all interactions, all edge cases. Update `design/ux-flows.md` with a sprint-specific section, or create `design/sprint-flows/sprint-[N].md`. Incorporate learnings from screens already built.
-
-**As Engineering Lead:** Review each elaborated story against the Definition of Ready. Stories not ready are returned to the PM for more elaboration — do not carry unready stories into sprint planning.
-
-### Sprint Planning (start of each sprint)
-**As Engineering Lead:**
-1. Review the refined stories in `design/stories/` — these have already passed the Definition of Ready check during refinement
-2. Select stories for this sprint — highest value, highest dependency first
-3. Confirm sprint goal: one sentence describing what this sprint delivers
-4. Update the sprint planning section of `build/implementation-plan.md`
-
-### Sprint Execution
-**As Engineering Lead:** Assign the first task with full context: task definition, acceptance criteria, architecture reference, code standards, security surface flag.
-
-**As Developer:** Implement the assigned task against the spec. Surface any spec gap or ambiguity immediately — do not assume. Produce task notes for anything unexpected.
-
-**As QA Engineer:** Before the Developer starts — write test cases for this story using `.agency/templates/docs/test-cases.md`. Confirm they fail (nothing is built yet). This is the proof that tests validate the spec, not the implementation. Apply `.agency/skills/security-review.md` if the story has a security surface. Then, after the Developer completes implementation, validate against acceptance criteria, produce a QA Report using `.agency/templates/docs/qa-report.md`, and issue sign-off or list blocking issues.
-
-**As Engineering Lead:** Review and integrate. If QA issues are blocking, assign back for fixes before integrating. Assign next task. Repeat until sprint stories are complete.
-
-### Sprint Review (end of each sprint)
-**As Engineering Lead:**
-1. Record what was completed vs. committed
-2. Record velocity (stories completed)
-3. Note anything carried over and why
-4. Re-prioritise backlog if sprint revealed new information
-5. Update `build/implementation-plan.md` sprint review section
+To re-enter mid-epic in a new session, run `/epic` — it will resume from where work left off.
 
 ---
 
