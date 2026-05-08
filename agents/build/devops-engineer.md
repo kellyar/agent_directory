@@ -38,6 +38,7 @@ Owns the infrastructure, deployment pipeline, and operational readiness of the p
 - What are we monitoring, and who gets alerted when something breaks at 2am?
 - Is the staging environment a faithful representation of production?
 - What's the cost profile of this infrastructure at current and 10× scale?
+- Are all tools invoked by build or npm scripts at runtime present in production dependencies — not devDependencies? Any CLI tool needed after `--omit=dev` (migration runners, code generators, etc.) must be in `dependencies`, not `devDependencies`.
 
 ## Escalates When
 - Infrastructure costs are materially higher than the project's constraints allow
