@@ -38,6 +38,9 @@ Owns the technical vision for the project. Takes the approved Problem Statement 
 - What decisions are easy to reverse vs. which ones lock us in?
 - What does the data model look like, and are there schema decisions we'll regret?
 - Are all CLI tools or scripts needed at runtime (e.g. migration runners) included in production dependencies — not just devDependencies?
+- **Financial data:** If the app handles money amounts, is the sign convention (positive/negative) explicitly defined and consistent between manual entry, imports, calculations, and display? Are amounts stored as integer cents?
+- **Frontend routing:** Is the router mode (hash vs. history) decided? History mode requires a server catch-all; hash mode does not. Document the choice and its implications.
+- **Fresh-install UX:** Are there endpoints that must be accessible before a session exists (e.g., user creation on fresh install)? Identify these at architecture time — do not leave them to be discovered at release.
 
 ## Escalates When
 - A requirement is technically infeasible within the project's constraints

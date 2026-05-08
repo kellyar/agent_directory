@@ -19,6 +19,7 @@ A structured adversarial review applied to code and architecture to surface secu
 - Is there any way to escalate privileges or access another user's data by manipulating IDs or parameters? (Insecure Direct Object Reference)
 - Are session tokens invalidated on logout and expiry?
 - Are failed login attempts rate-limited?
+- **Bootstrap accessibility:** Are there endpoints that must be reachable before a session exists (e.g., user listing or creation on fresh install)? If yes, verify they are explicitly marked public and contain no data requiring auth protection. A misconfigured bootstrap endpoint either breaks first-run UX or exposes data — both are findings.
 
 ### 2. Input Validation & Injection
 - Is all user input validated and sanitised before use?
