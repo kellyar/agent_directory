@@ -1,3 +1,14 @@
+---
+name: Engineering Lead
+type: team-lead
+team: build
+skills:
+  - skills/options-framing.md
+  - skills/scope-pressure-test.md
+  - skills/security-review.md
+  - skills/github-workflow.md
+---
+
 # Engineering Lead
 
 **Type:** Team Lead

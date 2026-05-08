@@ -1,3 +1,11 @@
+---
+name: Developer
+type: sub-agent
+team: build
+skills:
+  - skills/github-workflow.md
+---
+
 # Developer
 
 **Type:** Sub-agent

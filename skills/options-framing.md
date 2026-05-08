@@ -1,3 +1,12 @@
+---
+name: Options Framing
+used-by:
+  - Orchestrator
+  - Systems Architect
+  - Engineering Lead
+when: When escalating a genuine fork-in-the-road that requires a priority or values decision
+---
+
 # Skill: Options Framing
 
 ## Purpose

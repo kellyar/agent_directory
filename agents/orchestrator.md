@@ -1,3 +1,10 @@
+---
+name: Orchestrator
+type: orchestrator
+team: —
+skills: []
+---
+
 # Orchestrator (Engineering Manager)
 
 **Type:** Orchestrator

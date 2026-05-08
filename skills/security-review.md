@@ -1,3 +1,12 @@
+---
+name: Security Review
+used-by:
+  - Engineering Lead
+  - QA Engineer
+  - Systems Architect
+when: Any task touching auth, data handling, payments, or external input
+---
+
 # Skill: Security Review
 
 ## Purpose

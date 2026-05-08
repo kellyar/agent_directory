@@ -15,6 +15,8 @@ Do not store project briefs, decisions, or artifacts here. Those belong in the p
 | `/resume` | Reload project context at the start of any new session — always run this first |
 | `/context` | Save the current session state to `context.md` — run this before closing |
 | `/new-project` | Initialize a new project |
+| `/new-wiki` | Set up the wiki knowledge base (run automatically by `/new-project`) |
+| `/wiki-lint` | Health-check the wiki: orphans, contradictions, knowledge gaps |
 | `/discovery` | Run the Discovery Team |
 | `/architecture` | Run the Design & Architecture Team (requires CP1 approval) |
 | `/build` | Run the Build Team (requires CP2 approval) |
@@ -81,6 +83,7 @@ Foundational beliefs that shape how all agents think and work. Not methodologies
 | `skills/scope-pressure-test.md` | Product Manager, Engineering Lead | To validate MVP scope and build plan |
 | `skills/security-review.md` | QA Engineer, Engineering Lead | Any task touching auth, data handling, or external input |
 | `skills/github-workflow.md` | Developer, Engineering Lead, QA Engineer, DevOps Engineer | All build phase work — branching, PRs, and merge gate |
+| `skills/wiki-operations.md` | Market Analyst, Technical Researcher | Ingesting research into the wiki; querying for prior knowledge |
 
 ## Submodule Usage
 

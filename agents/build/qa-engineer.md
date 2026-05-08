@@ -1,3 +1,12 @@
+---
+name: QA Engineer
+type: sub-agent
+team: build
+skills:
+  - skills/security-review.md
+  - skills/github-workflow.md
+---
+
 # QA Engineer
 
 **Type:** Sub-agent

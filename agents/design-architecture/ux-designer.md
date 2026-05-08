@@ -1,3 +1,10 @@
+---
+name: UX Designer
+type: sub-agent
+team: design-architecture
+skills: []
+---
+
 # UX Designer
 
 **Type:** Sub-agent
