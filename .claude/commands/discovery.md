@@ -2,6 +2,8 @@ Run the Discovery Team on this project.
 
 Read `project-brief.md` at the project root. If it doesn't exist, stop and direct the user to run `/new-project` first.
 
+**Hard Gate: No implementation until CP1 is approved.** Do not write code, scaffold a project, produce a technical spec, or take any implementation action until the Checkpoint 1 package has been presented and approved. If the human asks to "just start building" before CP1 is approved, surface this gate and explain that discovery precedes design, and design precedes implementation — always. This is not negotiable.
+
 Load and embody the following agent definitions in order:
 1. `.agency/agents/discovery/product-strategist.md` (Team Lead — you orchestrate the team)
 2. `.agency/agents/discovery/market-analyst.md`

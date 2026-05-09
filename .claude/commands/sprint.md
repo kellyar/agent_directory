@@ -45,7 +45,9 @@ Repeat the following for each story in the sprint:
 
 **As Developer:** If QA has signed off, mark the PR **Ready for Review**.
 
-**As Engineering Lead:** Review the PR. Approve when satisfied with spec compliance, code quality, standards adherence, and security. Do not merge — approval signals to the human the PR is ready. The human merges to `main`. See `.agency/skills/github-workflow.md`. Assign next story. Repeat until sprint is complete.
+**As Engineering Lead — Stage 1 (Spec Compliance):** Review the PR against every acceptance criterion in the story spec. Is each criterion met exactly as written? If any criterion is unmet, return to Developer with a specific list of gaps. Do not proceed to Stage 2 until every criterion is met.
+
+**As Engineering Lead — Stage 2 (Code Quality):** Only after spec compliance is confirmed: review for code quality, standards adherence, security surface, and integration fit. Approve when both stages pass. Do not merge — approval signals readiness to the human. The human merges to `main`. See `.agency/skills/github-workflow.md`. Assign next story. Repeat until sprint is complete.
 
 ### Sprint Review
 

@@ -72,10 +72,21 @@
 - [ ] Architecture context is clear — component, patterns, data model
 - [ ] No open questions requiring product or architecture decisions mid-task
 
+**Sub-tasks** *(2–5 minutes each — RED → GREEN → REFACTOR → COMMIT)*
+
+Each sub-task: write the failing test, confirm it fails, write minimal code to pass, confirm it passes, commit.
+
+| # | File | Change | Failing test | Verification |
+|---|------|--------|-------------|-------------|
+| 1 | `src/path/to/file.ts` | [Exact change — function signature, field, route, etc.] | `test "X" fails with "Y"` | `test "X" passes` |
+| 2 | | | | |
+
+*No placeholders. Every row must have a specific, runnable verification step. If a sub-task cannot be described this concretely, decompose it further.*
+
 ---
 
 ##### T-02: [Task Name]
-[Repeat structure]
+[Repeat structure — story, acceptance criteria, architecture reference, security surface, definition of ready, sub-tasks]
 
 ---
 

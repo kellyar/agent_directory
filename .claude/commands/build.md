@@ -11,6 +11,10 @@ Load and embody the following agent definitions:
 
 Apply throughout: `.agency/principles/agile.md` and `.agency/principles/spec-driven-development.md`
 
+Before each action, apply `.agency/skills/skill-check.md` — scan for applicable skills and invoke before proceeding.
+
+**Model cost optimisation:** When dispatching subagents, use the least-powerful model that can handle the role. Mechanical tasks (writing code against a defined spec, running tests) use fast, cheap models. Architecture decisions, ambiguity resolution, and security review require capable models.
+
 ---
 
 ## Setup Phase — Before Any Code Is Written

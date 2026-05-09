@@ -79,6 +79,7 @@ Foundational beliefs that shape how all agents think and work. Not methodologies
 
 | Skill | Used By | When |
 |-------|---------|------|
+| `skills/skill-check.md` | All agents | Before every action — scan for applicable skills and invoke before proceeding. If there's even a small chance a skill applies, read it first. |
 | `skills/bug-investigation.md` | QA Engineer, Engineering Lead | When a bug is reported and root cause is unknown |
 | `skills/assumption-mapping.md` | Product Strategist, Systems Architect | Before finalizing any direction |
 | `skills/options-framing.md` | Orchestrator, Systems Architect, Engineering Lead | When escalating a fork-in-the-road |

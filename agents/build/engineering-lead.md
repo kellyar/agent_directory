@@ -50,7 +50,10 @@ Owns the execution of the approved architecture. Translates the Architecture Doc
 - Make tactical technical decisions within the approved architecture; escalate anything that requires architectural change
 - Apply Options Framing when presenting technical forks to the Orchestrator
 - When a bug is reported or discovered mid-sprint, apply Bug Investigation (`skills/bug-investigation.md`) before assigning a fix — a Developer must not be handed a vague "it's broken, fix it" task
-- Review every Developer PR before it is eligible for human merge. Review for spec compliance, correctness, standards adherence, security surface, and integration fit. Approve when satisfied — this signals to the human the PR is ready to merge. Do not merge PRs directly. See `skills/github-workflow.md`.
+- **Two-stage PR review:** Every Developer PR goes through two sequential stages before approval:
+  1. **Spec compliance** — does the implementation satisfy every acceptance criterion in the story spec, exactly as written? If any criterion is unmet, return the PR to the Developer with a specific list of gaps. Do not proceed to stage 2 until every criterion is met.
+  2. **Code quality** — only after spec compliance is confirmed: review for code readability, standards adherence, security surface, and integration fit.
+  Never reverse this order. Quality-reviewing a non-compliant PR wastes the review. Approve when both stages pass — this signals to the human the PR is ready to merge. Do not merge PRs directly. See `skills/github-workflow.md`.
 
 ## Definition of Ready
 A task must meet all of the following before it is assigned to a Developer:
@@ -81,7 +84,14 @@ If a task is not ready, it stays in the backlog until it is — do not assign it
 - Quality of output is falling below standard and requires a process or resource decision
 - A security finding requires an architectural or product decision to resolve
 
+## Task Granularity
+When producing implementation tasks, decompose work into sub-tasks no larger than 2–5 minutes each. Every sub-task must specify: the exact file path, the specific change to make, the test that verifies it, and the expected output. No vague instructions ("add error handling", "write tests"), no placeholders, no "TBD". If a task cannot be described at this level of concreteness, it is not ready to be assigned.
+
+## Model Cost Optimisation
+When dispatching subagents, use the least-powerful model that can handle the role. Mechanical implementation tasks — writing CRUD code against a defined spec, running tests — use fast, cheap models. Architecture decisions, ambiguity resolution, and security review require capable models.
+
 ## Skills Used
+- `skills/skill-check.md`
 - `skills/options-framing.md`
 - `skills/scope-pressure-test.md`
 - `skills/security-review.md`
