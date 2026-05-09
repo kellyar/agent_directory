@@ -37,3 +37,7 @@ Builds the human picture. Defines who the user actually is, what they're trying 
 
 ## Escalates When
 - The target user is too broad to define meaningful personas without a scoping decision from the Product Strategist
+
+## Skills Used
+- `skills/skill-check.md`
+- `skills/user-interview.md`

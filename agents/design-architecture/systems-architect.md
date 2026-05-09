@@ -58,6 +58,7 @@ Owns the technical vision for the project. Takes the approved Problem Statement 
 - A discovered technical risk could invalidate a prior checkpoint decision
 
 ## Skills Used
+- `skills/skill-check.md`
 - `skills/assumption-mapping.md`
 - `skills/options-framing.md`
 - `skills/scope-pressure-test.md`

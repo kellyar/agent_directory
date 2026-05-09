@@ -75,4 +75,5 @@ Translates the approved discovery output into a buildable specification — work
 - Learning from a sprint invalidates an approved epic — requires scope-change process
 
 ## Skills Used
+- `skills/skill-check.md`
 - `skills/scope-pressure-test.md`

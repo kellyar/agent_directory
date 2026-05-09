@@ -88,11 +88,17 @@ A PR must meet all of the following before it is eligible for human merge:
 
 ## Engineering Lead: PR Review
 
-- Review every PR before it is eligible for human merge.
-- Review focuses on: spec compliance, code correctness, standards adherence, security surface, integration fit.
-- Approve when satisfied — this signals to the human that the PR is ready to merge.
+Every PR goes through two sequential stages. Do not combine them or reverse the order.
+
+**Stage 1 — Spec Compliance:**
+- Check every acceptance criterion from the story spec. Is each one met exactly as written?
+- If any criterion is unmet: request changes with a specific list of gaps. Do not proceed to Stage 2 until every criterion is met.
+
+**Stage 2 — Code Quality** *(only after Stage 1 passes):*
+- Review for code correctness, readability, standards adherence, security surface, and integration fit.
 - If changes are needed: request changes with specific, actionable feedback. Do not approve until addressed.
-- Do not merge PRs directly. The human merges after Engineering Lead approval.
+
+Approve when both stages pass — this signals to the human that the PR is ready to merge. Do not merge PRs directly. The human merges after Engineering Lead approval.
 
 ---
 

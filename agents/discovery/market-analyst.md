@@ -38,3 +38,7 @@ A focused research agent. Does not form strategy — produces raw, factual intel
 
 ## Escalates When
 - Research reveals the space is already saturated with a dominant player in a way that changes the viability of the idea — escalates immediately to the Product Strategist rather than completing the full brief
+
+## Skills Used
+- `skills/skill-check.md`
+- `skills/wiki-operations.md`
