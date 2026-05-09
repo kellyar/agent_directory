@@ -45,3 +45,6 @@ Ensures the success metrics defined at discovery and formalised in the PRD can a
 - A success metric from the PRD is not measurable as defined — requires PM to redefine it
 - Instrumentation requires capturing PII or sensitive data — requires explicit sign-off before proceeding
 - An analytics platform limitation prevents measuring a key metric — requires a tooling decision
+
+## Skills Used
+- `skills/skill-check.md`

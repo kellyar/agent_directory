@@ -55,5 +55,6 @@ Owns quality validation across the build. Not a gatekeeper at the end — an act
 - A security finding is identified that requires an architectural or product decision to resolve
 
 ## Skills Used
+- `skills/skill-check.md`
 - `skills/security-review.md`
 - `skills/github-workflow.md`

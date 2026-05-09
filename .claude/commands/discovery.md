@@ -25,4 +25,4 @@ Save all outputs to the `discovery/` folder at the project root:
 Update the **Current Phase** in `CLAUDE.md` to `Discovery`.
 
 If mode is **Guided:** Present Checkpoint 1 clearly to the user — distilled summary, not raw output — and wait for approval before proceeding.
-If mode is **Autonomous:** Log the checkpoint decision with reasoning in `decisions.md` and confirm discovery is complete.
+If mode is **Autonomous:** Log the checkpoint decision with reasoning in `decisions.md` using the format in `.agency/templates/decisions.md`. Confirm discovery is complete.

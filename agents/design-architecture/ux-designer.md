@@ -71,3 +71,6 @@ Defines how users move through the product — working at two levels. Upfront: t
 - A flow requires a product decision about feature scope or priority
 - A technically preferred implementation would meaningfully degrade the user experience — requires Architect + human resolution
 - Building a sprint's screens reveals that the upfront IA or navigation model needs revision
+
+## Skills Used
+- `skills/skill-check.md`

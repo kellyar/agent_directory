@@ -37,3 +37,7 @@ A targeted research agent for the Systems Architect. Investigates specific techn
 
 ## Escalates When
 - Research reveals that the approach being evaluated is not viable — escalates immediately rather than completing the full brief
+
+## Skills Used
+- `skills/skill-check.md`
+- `skills/wiki-operations.md`

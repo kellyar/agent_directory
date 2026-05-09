@@ -56,5 +56,6 @@ Owns the infrastructure, deployment pipeline, and operational readiness of the p
 - The approved architecture cannot be deployed as designed — escalate to Systems Architect
 
 ## Skills Used
+- `skills/skill-check.md`
 - `skills/security-review.md`
 - `skills/github-workflow.md`

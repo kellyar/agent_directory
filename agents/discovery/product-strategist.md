@@ -57,5 +57,7 @@ The first agent to engage with a new idea. Their job is to pressure-test the vis
 - Two valid but conflicting solution directions exist and the choice requires a values decision from the human
 
 ## Skills Used
+- `skills/skill-check.md`
+- `skills/user-interview.md`
 - `skills/assumption-mapping.md`
 - `skills/scope-pressure-test.md`

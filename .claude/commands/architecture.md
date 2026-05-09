@@ -56,4 +56,4 @@ design/
 Update the **Current Phase** in `CLAUDE.md` to `Design & Architecture`.
 
 If mode is **Guided:** Present Checkpoint 2 to the user — this is the most critical checkpoint. Wait for explicit approval before proceeding.
-If mode is **Autonomous:** Log the checkpoint decision with full reasoning in `decisions.md` and confirm architecture is complete.
+If mode is **Autonomous:** Log the checkpoint decision with full reasoning in `decisions.md` using the format in `.agency/templates/decisions.md`. Confirm architecture is complete.

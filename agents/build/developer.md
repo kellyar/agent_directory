@@ -53,4 +53,5 @@ Executes implementation tasks as assigned by the Engineering Lead. Writes correc
 - `principles/spec-driven-development.md`
 
 ## Skills Used
+- `skills/skill-check.md`
 - `skills/github-workflow.md`
