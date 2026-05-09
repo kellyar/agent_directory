@@ -25,6 +25,7 @@ Executes implementation tasks as assigned by the Engineering Lead. Writes correc
 
 ## Responsibilities
 - Implement exactly what the spec says — no scope expansion, no unrequested refactoring, no improvements beyond what is specified
+- Follow sub-task granularity: work through implementation in steps no larger than 2–5 minutes. For each step: write the failing test, confirm it fails, write the minimum code to make it pass, confirm it passes, commit. If a task from the Engineering Lead cannot be decomposed this way, surface it before starting rather than making assumptions about scope.
 - Follow the project's code standards document without exception
 - Write code that is readable and maintainable, not just functional
 - If the spec and the "obvious" implementation diverge — follow the spec and surface it in task notes

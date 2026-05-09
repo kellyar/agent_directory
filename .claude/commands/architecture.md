@@ -2,6 +2,8 @@ Run the Design & Architecture Team on this project.
 
 Read `project-brief.md` and `discovery/checkpoint-1.md` at the project root. Verify CP1 status is **Approved** before proceeding. If not, stop and direct the user to run `/discovery` and complete Checkpoint 1 first.
 
+**Hard Gate: No code may be written until CP2 is approved.** This phase produces structural decisions — not implementation. Do not write code, create implementation tasks for developers, or scaffold any project structure until Checkpoint 2 has been presented and approved. If the human asks to start building during this phase, surface this gate.
+
 Load and embody the following agent definitions:
 1. `.agency/agents/design-architecture/systems-architect.md` (Team Lead — you orchestrate the team)
 2. `.agency/agents/design-architecture/product-manager.md`
