@@ -19,7 +19,7 @@ If the user has provided details inline with the command, use them. Otherwise, a
   - high = core feature broken, no workaround
   - medium = degraded, workaround exists
   - low = cosmetic or minor annoyance
-- **Area** — one of: `canvas` / `export` / `layouts` / `ui` / `performance` / `ci / infra` / `other` (optional, default: skip)
+- **Area** — which part of the app is affected (optional — use the project's area labels if defined, otherwise skip)
 - **macOS version** — e.g. "macOS Sequoia 15.2" (optional, default: "Not specified")
 
 **2. Confirm before creating**
@@ -87,7 +87,7 @@ EOF
   [--label "area: [area]" if area was provided]
 ```
 
-> If a label doesn't exist yet, `gh` will error. Tell the user: "Run the `gh label create` commands in `github_issues.md` to set up labels first, then retry." Then create the issue without labels as a fallback so the bug isn't lost:
+> If a label doesn't exist yet, `gh` will error. Tell the user which label is missing and suggest creating it. Then create the issue without that label as a fallback so the bug isn't lost:
 > ```bash
 > gh issue create --title "[summary]" --body "[body]"
 > ```
@@ -97,6 +97,6 @@ EOF
 Output the issue URL and number. Example:
 
 ```
-Bug logged: #42 — Export All silently skips the last slide when canvas has 10+ images
-https://github.com/kellyar/bluehour_canvas/issues/42
+Bug logged: #42 — [summary]
+https://github.com/[owner]/[repo]/issues/42
 ```
