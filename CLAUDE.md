@@ -89,6 +89,23 @@ Foundational beliefs that shape how all agents think and work. Not methodologies
 | `skills/github-workflow.md` | Developer, Engineering Lead, QA Engineer, DevOps Engineer | All build phase work — branching, PRs, and merge gate |
 | `skills/wiki-operations.md` | Market Analyst, Technical Researcher | Ingesting research into the wiki; querying for prior knowledge |
 
+## Vendored Craft Skills
+
+Engineering and craft techniques vendored from [mattpocock/skills](https://github.com/mattpocock/skills) (MIT), under `skills/vendor/mattpocock/`. Each is a native-format skill (`SKILL.md` + reference files). They are the *how* of implementation; the process skills above are the *when/why*. See the trigger table in `skills/skill-check.md` for full role mappings.
+
+| Skill | Used By | When |
+|-------|---------|------|
+| `vendor/mattpocock/grill-me`, `grill-with-docs` | Product Strategist, Systems Architect, PM | Stress-testing a plan/design before committing (grill-with-docs also emits ADRs + glossary) |
+| `vendor/mattpocock/domain-modeling` | Systems Architect | Pinning down ubiquitous language; recording ADRs |
+| `vendor/mattpocock/codebase-design`, `design-an-interface` | Engineering Lead, Systems Architect | Designing/improving a module's interface; exploring API shapes |
+| `vendor/mattpocock/prototype` | Developer, Systems Architect | Throwaway prototype to answer a design question |
+| `vendor/mattpocock/to-tickets` | Product Manager, Engineering Lead | Breaking an approved spec/epic into tracer-bullet tickets |
+| `vendor/mattpocock/implement`, `tdd` | Developer, QA Engineer | Executing a ticket from spec; building/fixing test-first |
+| `vendor/mattpocock/improve-codebase-architecture`, `request-refactor-plan` | Engineering Lead | Finding deepening opportunities; planning a refactor |
+| `vendor/mattpocock/research` | Technical Researcher, Market Analyst | Investigating a question against primary sources |
+| `vendor/mattpocock/handoff` | Orchestrator | Compacting a session into a handoff doc |
+| `vendor/mattpocock/writing-great-skills` | Orchestrator | Authoring or editing a skill in this framework |
+
 ## Submodule Usage
 
 This repo is designed to be added to project repos as:

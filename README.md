@@ -301,6 +301,23 @@ Cross-cutting methodologies used by multiple agents.
 | `skills/security-review.md` | QA Engineer, Engineering Lead | Any task touching auth, data handling, or external input |
 | `skills/github-workflow.md` | Developer, Engineering Lead, QA Engineer, DevOps Engineer | All build phase work — branching, PRs, and merge gate |
 
+### Vendored Craft Skills
+
+Under `skills/vendor/mattpocock/` — engineering and craft techniques vendored from [mattpocock/skills](https://github.com/mattpocock/skills) (MIT © Matt Pocock). The process skills above decide *when* and *why*; these decide *how*. Full trigger conditions and role mappings live in `skills/skill-check.md`.
+
+| Skill | Used By | When |
+|-------|---------|------|
+| `grill-me`, `grill-with-docs` | Product Strategist, Systems Architect, PM | Stress-testing a plan/design before committing |
+| `domain-modeling` | Systems Architect | Ubiquitous language; recording ADRs |
+| `codebase-design`, `design-an-interface` | Engineering Lead, Systems Architect | Designing a module's interface; exploring API shapes |
+| `prototype` | Developer, Systems Architect | Throwaway prototype to answer a design question |
+| `to-tickets`, `implement`, `tdd` | Product Manager, Developer, QA | Spec → tickets → test-first implementation |
+| `improve-codebase-architecture`, `request-refactor-plan` | Engineering Lead | Finding deepening opportunities; planning refactors |
+| `research` | Technical Researcher, Market Analyst | Investigating against primary sources |
+| `handoff`, `writing-great-skills` | Orchestrator | Session handoff; authoring framework skills |
+
+To update these, re-vendor from upstream (see `skills/vendor/mattpocock/README.md`).
+
 ---
 
 ## Templates

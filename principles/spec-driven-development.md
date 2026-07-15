@@ -45,7 +45,7 @@ Changing a spec mid-build is a scope change. Small changes go through the Engine
 If a spec is ambiguous, the Developer escalates to the Engineering Lead, who escalates to the appropriate author. Assumptions made by Developers to fill spec gaps are the most common source of rework in software projects.
 
 **5. Tests are written before code, against the spec.**
-QA writes test cases against acceptance criteria before the Developer starts implementation. Tests are confirmed failing (because nothing is built yet) before coding begins. This is the proof that tests actually validate the spec — not that they were retrofitted after the fact.
+QA writes test cases against acceptance criteria before the Developer starts implementation. Tests are confirmed failing (because nothing is built yet) before coding begins. This is the proof that tests actually validate the spec — not that they were retrofitted after the fact. For the mechanics of the red → green → refactor loop — what makes a good test, where seams go, and when to mock — Developers follow `skills/vendor/mattpocock/tdd`.
 
 **6. Uncertainty is marked, not hidden.**
 When writing a spec, use `[NEEDS CLARIFICATION]` to flag any area of genuine uncertainty rather than filling it in with a plausible guess. A spec with visible uncertainty is better than a spec that looks complete but contains assumptions. Every `[NEEDS CLARIFICATION]` marker must be resolved before the spec can be used — it is a gate, not a note.
